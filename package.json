@@ -1,0 +1,41 @@
+{
+  "name": "postgraphile-plugin-connection-filter-postgis",
+  "version": "1.0.0-alpha.0",
+  "description": "PostGIS filtering options in PostGraphile",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint **/*.js",
+    "test": "scripts/test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattbretl/postgraphile-plugin-connection-filter-postgis.git"
+  },
+  "author": "Matt Bretl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mattbretl/postgraphile-plugin-connection-filter-postgis/issues"
+  },
+  "devDependencies": {
+    "@graphile/postgis": "0.0.5",
+    "eslint": "^5.13.0",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-jest": "^22.2.2",
+    "eslint-plugin-prettier": "^3.0.1",
+    "graphql": "^14.0.2",
+    "jest": "^24.1.0",
+    "pg": "^7.8.0",
+    "postgraphile-core": "4.4.0-beta.4",
+    "postgraphile-plugin-connection-filter": "1.0.0-rc.2",
+    "prettier": "1.16.4"
+  },
+  "jest": {
+    "testRegex": "__tests__/.*\\.test\\.js$"
+  },
+  "files": [
+    "src"
+  ],
+  "engines": {
+    "node": ">=8.6"
+  }
+}
