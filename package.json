@@ -1,6 +1,6 @@
 {
   "name": "postgraphile-plugin-connection-filter-postgis",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.2",
   "description": "PostGIS filtering options in PostGraphile",
   "main": "index.js",
   "scripts": {
