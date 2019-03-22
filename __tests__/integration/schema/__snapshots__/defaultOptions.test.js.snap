@@ -396,7 +396,7 @@ interface GeometryInterface {
 
 type GeometryLinestring implements GeometryInterface {
   geojson: GeoJSON
-  points: [GeographyPoint]
+  points: [GeometryPoint]
 }
 
 \\"\\"\\"
@@ -509,7 +509,7 @@ input GeometryLinestringFilter {
 
 type GeometryMultilinestring implements GeometryInterface {
   geojson: GeoJSON
-  lines: [GeographyLinestring]
+  lines: [GeometryLinestring]
 }
 
 \\"\\"\\"
@@ -622,7 +622,7 @@ input GeometryMultilinestringFilter {
 
 type GeometryMultipoint implements GeometryInterface {
   geojson: GeoJSON
-  points: [GeographyPoint]
+  points: [GeometryPoint]
 }
 
 \\"\\"\\"
@@ -735,7 +735,7 @@ input GeometryMultipointFilter {
 
 type GeometryMultipolygon implements GeometryInterface {
   geojson: GeoJSON
-  polygons: [GeographyPolygon]
+  polygons: [GeometryPolygon]
 }
 
 \\"\\"\\"
@@ -961,9 +961,9 @@ input GeometryPointFilter {
 }
 
 type GeometryPolygon implements GeometryInterface {
-  exterior: GeographyLinestring
+  exterior: GeometryLinestring
   geojson: GeoJSON
-  interiors: [GeographyLinestring]
+  interiors: [GeometryLinestring]
 }
 
 \\"\\"\\"

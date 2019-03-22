@@ -7,7 +7,7 @@ This plugin exposes additional PostGIS-related fields on the `filter` argument o
 
 Requires `postgraphile@^4.4.0-beta.4` and the following plugins appended prior to this plugin:
 
-- `@graphile/postgis@0.0.5`
+- `@graphile/postgis@0.0.6`
 - `postgraphile-plugin-connection-filter@^1.0.0-rc.2`
 
 ## Operators

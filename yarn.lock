@@ -139,10 +139,10 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@graphile/postgis@0.0.5":
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/@graphile/postgis/-/postgis-0.0.5.tgz#2257569a506566000f0048c469f017080c20c7aa"
-  integrity sha512-WqFiuRzm5Q1XTgwrDEbtswdltvqgSsiMlq8u6kPLgGkS7TLDL89ZezCIaO6jmzScBvkqQQT/IEtDU9rlRvSiIg==
+"@graphile/postgis@0.0.6":
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/@graphile/postgis/-/postgis-0.0.6.tgz#0c021332544235d89c965e7e13309e616fdc8fdf"
+  integrity sha512-R5G+HG0JGb7dbJYJIumi55hYT94uz8km8V5AERrSIWaVf65TqOeoawmeWkjrJv6djcwMsNVFjPcXy1BH39PaDg==
   dependencies:
     "@types/debug" "^4.1.2"
     "@types/graphql" "^14.0.7"
