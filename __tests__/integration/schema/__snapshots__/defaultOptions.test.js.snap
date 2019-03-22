@@ -96,19 +96,19 @@ type GeographyGeometryCollection implements GeographyInterface {
 A filter to be used against GeographyGeometryCollection fields. All fields are combined with a logical ‘and.’
 \\"\\"\\"
 input GeographyGeometryCollectionFilter {
-  \\"\\"\\"Matches the specified geography using the \`&&\` operator.\\"\\"\\"
+  \\"\\"\\"2D bounding box intersects the specified geometry's 2D bounding box.\\"\\"\\"
   bboxIntersects2D: GeoJSON
 
-  \\"\\"\\"Matches the specified geography using the \`ST_CoveredBy\` function.\\"\\"\\"
+  \\"\\"\\"No point is outside the specified geometry.\\"\\"\\"
   coveredBy: GeoJSON
 
-  \\"\\"\\"Matches the specified geography using the \`ST_Covers\` function.\\"\\"\\"
+  \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
   covers: GeoJSON
 
-  \\"\\"\\"Matches the specified geography using the \`=\` operator.\\"\\"\\"
+  \\"\\"\\"Coordinates and coordinate order are the same as specified geometry.\\"\\"\\"
   exactlyEquals: GeoJSON
 
-  \\"\\"\\"Matches the specified geography using the \`ST_Intersects\` function.\\"\\"\\"
+  \\"\\"\\"They share any portion of space in 2D.\\"\\"\\"
   intersects: GeoJSON
 }
 
@@ -127,19 +127,19 @@ type GeographyLinestring implements GeographyInterface {
 A filter to be used against GeographyLinestring fields. All fields are combined with a logical ‘and.’
 \\"\\"\\"
 input GeographyLinestringFilter {
-  \\"\\"\\"Matches the specified geography using the \`&&\` operator.\\"\\"\\"
+  \\"\\"\\"2D bounding box intersects the specified geometry's 2D bounding box.\\"\\"\\"
   bboxIntersects2D: GeoJSON
 
-  \\"\\"\\"Matches the specified geography using the \`ST_CoveredBy\` function.\\"\\"\\"
+  \\"\\"\\"No point is outside the specified geometry.\\"\\"\\"
   coveredBy: GeoJSON
 
-  \\"\\"\\"Matches the specified geography using the \`ST_Covers\` function.\\"\\"\\"
+  \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
   covers: GeoJSON
 
-  \\"\\"\\"Matches the specified geography using the \`=\` operator.\\"\\"\\"
+  \\"\\"\\"Coordinates and coordinate order are the same as specified geometry.\\"\\"\\"
   exactlyEquals: GeoJSON
 
-  \\"\\"\\"Matches the specified geography using the \`ST_Intersects\` function.\\"\\"\\"
+  \\"\\"\\"They share any portion of space in 2D.\\"\\"\\"
   intersects: GeoJSON
 }
 
@@ -152,19 +152,19 @@ type GeographyMultilinestring implements GeographyInterface {
 A filter to be used against GeographyMultilinestring fields. All fields are combined with a logical ‘and.’
 \\"\\"\\"
 input GeographyMultilinestringFilter {
-  \\"\\"\\"Matches the specified geography using the \`&&\` operator.\\"\\"\\"
+  \\"\\"\\"2D bounding box intersects the specified geometry's 2D bounding box.\\"\\"\\"
   bboxIntersects2D: GeoJSON
 
-  \\"\\"\\"Matches the specified geography using the \`ST_CoveredBy\` function.\\"\\"\\"
+  \\"\\"\\"No point is outside the specified geometry.\\"\\"\\"
   coveredBy: GeoJSON
 
-  \\"\\"\\"Matches the specified geography using the \`ST_Covers\` function.\\"\\"\\"
+  \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
   covers: GeoJSON
 
-  \\"\\"\\"Matches the specified geography using the \`=\` operator.\\"\\"\\"
+  \\"\\"\\"Coordinates and coordinate order are the same as specified geometry.\\"\\"\\"
   exactlyEquals: GeoJSON
 
-  \\"\\"\\"Matches the specified geography using the \`ST_Intersects\` function.\\"\\"\\"
+  \\"\\"\\"They share any portion of space in 2D.\\"\\"\\"
   intersects: GeoJSON
 }
 
@@ -177,19 +177,19 @@ type GeographyMultipoint implements GeographyInterface {
 A filter to be used against GeographyMultipoint fields. All fields are combined with a logical ‘and.’
 \\"\\"\\"
 input GeographyMultipointFilter {
-  \\"\\"\\"Matches the specified geography using the \`&&\` operator.\\"\\"\\"
+  \\"\\"\\"2D bounding box intersects the specified geometry's 2D bounding box.\\"\\"\\"
   bboxIntersects2D: GeoJSON
 
-  \\"\\"\\"Matches the specified geography using the \`ST_CoveredBy\` function.\\"\\"\\"
+  \\"\\"\\"No point is outside the specified geometry.\\"\\"\\"
   coveredBy: GeoJSON
 
-  \\"\\"\\"Matches the specified geography using the \`ST_Covers\` function.\\"\\"\\"
+  \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
   covers: GeoJSON
 
-  \\"\\"\\"Matches the specified geography using the \`=\` operator.\\"\\"\\"
+  \\"\\"\\"Coordinates and coordinate order are the same as specified geometry.\\"\\"\\"
   exactlyEquals: GeoJSON
 
-  \\"\\"\\"Matches the specified geography using the \`ST_Intersects\` function.\\"\\"\\"
+  \\"\\"\\"They share any portion of space in 2D.\\"\\"\\"
   intersects: GeoJSON
 }
 
@@ -202,19 +202,19 @@ type GeographyMultipolygon implements GeographyInterface {
 A filter to be used against GeographyMultipolygon fields. All fields are combined with a logical ‘and.’
 \\"\\"\\"
 input GeographyMultipolygonFilter {
-  \\"\\"\\"Matches the specified geography using the \`&&\` operator.\\"\\"\\"
+  \\"\\"\\"2D bounding box intersects the specified geometry's 2D bounding box.\\"\\"\\"
   bboxIntersects2D: GeoJSON
 
-  \\"\\"\\"Matches the specified geography using the \`ST_CoveredBy\` function.\\"\\"\\"
+  \\"\\"\\"No point is outside the specified geometry.\\"\\"\\"
   coveredBy: GeoJSON
 
-  \\"\\"\\"Matches the specified geography using the \`ST_Covers\` function.\\"\\"\\"
+  \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
   covers: GeoJSON
 
-  \\"\\"\\"Matches the specified geography using the \`=\` operator.\\"\\"\\"
+  \\"\\"\\"Coordinates and coordinate order are the same as specified geometry.\\"\\"\\"
   exactlyEquals: GeoJSON
 
-  \\"\\"\\"Matches the specified geography using the \`ST_Intersects\` function.\\"\\"\\"
+  \\"\\"\\"They share any portion of space in 2D.\\"\\"\\"
   intersects: GeoJSON
 }
 
@@ -228,19 +228,19 @@ type GeographyPoint implements GeographyInterface {
 A filter to be used against GeographyPoint fields. All fields are combined with a logical ‘and.’
 \\"\\"\\"
 input GeographyPointFilter {
-  \\"\\"\\"Matches the specified geography using the \`&&\` operator.\\"\\"\\"
+  \\"\\"\\"2D bounding box intersects the specified geometry's 2D bounding box.\\"\\"\\"
   bboxIntersects2D: GeoJSON
 
-  \\"\\"\\"Matches the specified geography using the \`ST_CoveredBy\` function.\\"\\"\\"
+  \\"\\"\\"No point is outside the specified geometry.\\"\\"\\"
   coveredBy: GeoJSON
 
-  \\"\\"\\"Matches the specified geography using the \`ST_Covers\` function.\\"\\"\\"
+  \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
   covers: GeoJSON
 
-  \\"\\"\\"Matches the specified geography using the \`=\` operator.\\"\\"\\"
+  \\"\\"\\"Coordinates and coordinate order are the same as specified geometry.\\"\\"\\"
   exactlyEquals: GeoJSON
 
-  \\"\\"\\"Matches the specified geography using the \`ST_Intersects\` function.\\"\\"\\"
+  \\"\\"\\"They share any portion of space in 2D.\\"\\"\\"
   intersects: GeoJSON
 }
 
@@ -254,19 +254,19 @@ type GeographyPolygon implements GeographyInterface {
 A filter to be used against GeographyPolygon fields. All fields are combined with a logical ‘and.’
 \\"\\"\\"
 input GeographyPolygonFilter {
-  \\"\\"\\"Matches the specified geography using the \`&&\` operator.\\"\\"\\"
+  \\"\\"\\"2D bounding box intersects the specified geometry's 2D bounding box.\\"\\"\\"
   bboxIntersects2D: GeoJSON
 
-  \\"\\"\\"Matches the specified geography using the \`ST_CoveredBy\` function.\\"\\"\\"
+  \\"\\"\\"No point is outside the specified geometry.\\"\\"\\"
   coveredBy: GeoJSON
 
-  \\"\\"\\"Matches the specified geography using the \`ST_Covers\` function.\\"\\"\\"
+  \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
   covers: GeoJSON
 
-  \\"\\"\\"Matches the specified geography using the \`=\` operator.\\"\\"\\"
+  \\"\\"\\"Coordinates and coordinate order are the same as specified geometry.\\"\\"\\"
   exactlyEquals: GeoJSON
 
-  \\"\\"\\"Matches the specified geography using the \`ST_Intersects\` function.\\"\\"\\"
+  \\"\\"\\"They share any portion of space in 2D.\\"\\"\\"
   intersects: GeoJSON
 }
 
@@ -284,86 +284,107 @@ type GeometryGeometryCollection implements GeometryInterface {
 A filter to be used against GeometryGeometryCollection fields. All fields are combined with a logical ‘and.’
 \\"\\"\\"
 input GeometryGeometryCollectionFilter {
-  \\"\\"\\"Matches the specified geometry using the \`|>>\` operator.\\"\\"\\"
+  \\"\\"\\"Bounding box is strictly above the specified geometry's bounding box.\\"\\"\\"
   bboxAbove: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`<<|\` operator.\\"\\"\\"
+  \\"\\"\\"Bounding box is strictly below the specified geometry's bounding box.\\"\\"\\"
   bboxBelow: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`~\` operator.\\"\\"\\"
+  \\"\\"\\"Bounding box contains the specified geometry's bounding box.\\"\\"\\"
   bboxContains: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`~=\` operator.\\"\\"\\"
+  \\"\\"\\"Bounding box is the same as the specified geometry's bounding box.\\"\\"\\"
   bboxEquals: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`&&\` operator.\\"\\"\\"
+  \\"\\"\\"2D bounding box intersects the specified geometry's 2D bounding box.\\"\\"\\"
   bboxIntersects2D: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`&&&\` operator.\\"\\"\\"
+  \\"\\"\\"
+  n-D bounding box intersects the specified geometry's n-D bounding box.
+  \\"\\"\\"
   bboxIntersectsND: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`<<\` operator.\\"\\"\\"
+  \\"\\"\\"
+  Bounding box is strictly to the left of the specified geometry's bounding box.
+  \\"\\"\\"
   bboxLeftOf: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`|&>\` operator.\\"\\"\\"
+  \\"\\"\\"
+  Bounding box overlaps or is above the specified geometry's bounding box.
+  \\"\\"\\"
   bboxOverlapsOrAbove: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`&<|\` operator.\\"\\"\\"
+  \\"\\"\\"
+  Bounding box overlaps or is below the specified geometry's bounding box.
+  \\"\\"\\"
   bboxOverlapsOrBelow: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`&<\` operator.\\"\\"\\"
+  \\"\\"\\"
+  Bounding box overlaps or is to the left of the specified geometry's bounding box.
+  \\"\\"\\"
   bboxOverlapsOrLeftOf: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`&>\` operator.\\"\\"\\"
+  \\"\\"\\"
+  Bounding box overlaps or is to the right of the specified geometry's bounding box.
+  \\"\\"\\"
   bboxOverlapsOrRightOf: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`>>\` operator.\\"\\"\\"
+  \\"\\"\\"
+  Bounding box is strictly to the right of the specified geometry's bounding box.
+  \\"\\"\\"
   bboxRightOf: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Contains\` function.\\"\\"\\"
+  \\"\\"\\"
+  No points of the specified geometry lie in the exterior, and at least one
+  point of the interior of the specified geometry lies in the interior.
+  \\"\\"\\"
   contains: GeoJSON
 
   \\"\\"\\"
-  Matches the specified geometry using the \`ST_ContainsProperly\` function.
+  The specified geometry intersects the interior but not the boundary (or exterior).
   \\"\\"\\"
   containsProperly: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_CoveredBy\` function.\\"\\"\\"
+  \\"\\"\\"No point is outside the specified geometry.\\"\\"\\"
   coveredBy: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Covers\` function.\\"\\"\\"
+  \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
   covers: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Crosses\` function.\\"\\"\\"
+  \\"\\"\\"They have some, but not all, interior points in common.\\"\\"\\"
   crosses: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Disjoint\` function.\\"\\"\\"
+  \\"\\"\\"They do not share any space together.\\"\\"\\"
   disjoint: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Equals\` function.\\"\\"\\"
+  \\"\\"\\"They represent the same geometry. Directionality is ignored.\\"\\"\\"
   equals: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`=\` operator.\\"\\"\\"
+  \\"\\"\\"Coordinates and coordinate order are the same as specified geometry.\\"\\"\\"
   exactlyEquals: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Intersects\` function.\\"\\"\\"
+  \\"\\"\\"They share any portion of space in 2D.\\"\\"\\"
   intersects: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_3DIntersects\` function.\\"\\"\\"
+  \\"\\"\\"They share any portion of space in 3D.\\"\\"\\"
   intersects3D: GeoJSON
 
   \\"\\"\\"
-  Matches the specified geometry using the \`ST_OrderingEquals\` function.
+  They represent the same geometry and points are in the same directional order.
   \\"\\"\\"
   orderingEquals: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Overlaps\` function.\\"\\"\\"
+  \\"\\"\\"
+  They share space, are of the same dimension, but are not completely contained by each other.
+  \\"\\"\\"
   overlaps: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Touches\` function.\\"\\"\\"
+  \\"\\"\\"
+  They have at least one point in common, but their interiors do not intersect.
+  \\"\\"\\"
   touches: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Within\` function.\\"\\"\\"
+  \\"\\"\\"Completely inside the specified geometry.\\"\\"\\"
   within: GeoJSON
 }
 
@@ -382,86 +403,107 @@ type GeometryLinestring implements GeometryInterface {
 A filter to be used against GeometryLinestring fields. All fields are combined with a logical ‘and.’
 \\"\\"\\"
 input GeometryLinestringFilter {
-  \\"\\"\\"Matches the specified geometry using the \`|>>\` operator.\\"\\"\\"
+  \\"\\"\\"Bounding box is strictly above the specified geometry's bounding box.\\"\\"\\"
   bboxAbove: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`<<|\` operator.\\"\\"\\"
+  \\"\\"\\"Bounding box is strictly below the specified geometry's bounding box.\\"\\"\\"
   bboxBelow: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`~\` operator.\\"\\"\\"
+  \\"\\"\\"Bounding box contains the specified geometry's bounding box.\\"\\"\\"
   bboxContains: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`~=\` operator.\\"\\"\\"
+  \\"\\"\\"Bounding box is the same as the specified geometry's bounding box.\\"\\"\\"
   bboxEquals: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`&&\` operator.\\"\\"\\"
+  \\"\\"\\"2D bounding box intersects the specified geometry's 2D bounding box.\\"\\"\\"
   bboxIntersects2D: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`&&&\` operator.\\"\\"\\"
+  \\"\\"\\"
+  n-D bounding box intersects the specified geometry's n-D bounding box.
+  \\"\\"\\"
   bboxIntersectsND: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`<<\` operator.\\"\\"\\"
+  \\"\\"\\"
+  Bounding box is strictly to the left of the specified geometry's bounding box.
+  \\"\\"\\"
   bboxLeftOf: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`|&>\` operator.\\"\\"\\"
+  \\"\\"\\"
+  Bounding box overlaps or is above the specified geometry's bounding box.
+  \\"\\"\\"
   bboxOverlapsOrAbove: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`&<|\` operator.\\"\\"\\"
+  \\"\\"\\"
+  Bounding box overlaps or is below the specified geometry's bounding box.
+  \\"\\"\\"
   bboxOverlapsOrBelow: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`&<\` operator.\\"\\"\\"
+  \\"\\"\\"
+  Bounding box overlaps or is to the left of the specified geometry's bounding box.
+  \\"\\"\\"
   bboxOverlapsOrLeftOf: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`&>\` operator.\\"\\"\\"
+  \\"\\"\\"
+  Bounding box overlaps or is to the right of the specified geometry's bounding box.
+  \\"\\"\\"
   bboxOverlapsOrRightOf: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`>>\` operator.\\"\\"\\"
+  \\"\\"\\"
+  Bounding box is strictly to the right of the specified geometry's bounding box.
+  \\"\\"\\"
   bboxRightOf: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Contains\` function.\\"\\"\\"
+  \\"\\"\\"
+  No points of the specified geometry lie in the exterior, and at least one
+  point of the interior of the specified geometry lies in the interior.
+  \\"\\"\\"
   contains: GeoJSON
 
   \\"\\"\\"
-  Matches the specified geometry using the \`ST_ContainsProperly\` function.
+  The specified geometry intersects the interior but not the boundary (or exterior).
   \\"\\"\\"
   containsProperly: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_CoveredBy\` function.\\"\\"\\"
+  \\"\\"\\"No point is outside the specified geometry.\\"\\"\\"
   coveredBy: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Covers\` function.\\"\\"\\"
+  \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
   covers: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Crosses\` function.\\"\\"\\"
+  \\"\\"\\"They have some, but not all, interior points in common.\\"\\"\\"
   crosses: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Disjoint\` function.\\"\\"\\"
+  \\"\\"\\"They do not share any space together.\\"\\"\\"
   disjoint: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Equals\` function.\\"\\"\\"
+  \\"\\"\\"They represent the same geometry. Directionality is ignored.\\"\\"\\"
   equals: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`=\` operator.\\"\\"\\"
+  \\"\\"\\"Coordinates and coordinate order are the same as specified geometry.\\"\\"\\"
   exactlyEquals: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Intersects\` function.\\"\\"\\"
+  \\"\\"\\"They share any portion of space in 2D.\\"\\"\\"
   intersects: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_3DIntersects\` function.\\"\\"\\"
+  \\"\\"\\"They share any portion of space in 3D.\\"\\"\\"
   intersects3D: GeoJSON
 
   \\"\\"\\"
-  Matches the specified geometry using the \`ST_OrderingEquals\` function.
+  They represent the same geometry and points are in the same directional order.
   \\"\\"\\"
   orderingEquals: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Overlaps\` function.\\"\\"\\"
+  \\"\\"\\"
+  They share space, are of the same dimension, but are not completely contained by each other.
+  \\"\\"\\"
   overlaps: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Touches\` function.\\"\\"\\"
+  \\"\\"\\"
+  They have at least one point in common, but their interiors do not intersect.
+  \\"\\"\\"
   touches: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Within\` function.\\"\\"\\"
+  \\"\\"\\"Completely inside the specified geometry.\\"\\"\\"
   within: GeoJSON
 }
 
@@ -474,86 +516,107 @@ type GeometryMultilinestring implements GeometryInterface {
 A filter to be used against GeometryMultilinestring fields. All fields are combined with a logical ‘and.’
 \\"\\"\\"
 input GeometryMultilinestringFilter {
-  \\"\\"\\"Matches the specified geometry using the \`|>>\` operator.\\"\\"\\"
+  \\"\\"\\"Bounding box is strictly above the specified geometry's bounding box.\\"\\"\\"
   bboxAbove: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`<<|\` operator.\\"\\"\\"
+  \\"\\"\\"Bounding box is strictly below the specified geometry's bounding box.\\"\\"\\"
   bboxBelow: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`~\` operator.\\"\\"\\"
+  \\"\\"\\"Bounding box contains the specified geometry's bounding box.\\"\\"\\"
   bboxContains: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`~=\` operator.\\"\\"\\"
+  \\"\\"\\"Bounding box is the same as the specified geometry's bounding box.\\"\\"\\"
   bboxEquals: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`&&\` operator.\\"\\"\\"
+  \\"\\"\\"2D bounding box intersects the specified geometry's 2D bounding box.\\"\\"\\"
   bboxIntersects2D: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`&&&\` operator.\\"\\"\\"
+  \\"\\"\\"
+  n-D bounding box intersects the specified geometry's n-D bounding box.
+  \\"\\"\\"
   bboxIntersectsND: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`<<\` operator.\\"\\"\\"
+  \\"\\"\\"
+  Bounding box is strictly to the left of the specified geometry's bounding box.
+  \\"\\"\\"
   bboxLeftOf: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`|&>\` operator.\\"\\"\\"
+  \\"\\"\\"
+  Bounding box overlaps or is above the specified geometry's bounding box.
+  \\"\\"\\"
   bboxOverlapsOrAbove: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`&<|\` operator.\\"\\"\\"
+  \\"\\"\\"
+  Bounding box overlaps or is below the specified geometry's bounding box.
+  \\"\\"\\"
   bboxOverlapsOrBelow: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`&<\` operator.\\"\\"\\"
+  \\"\\"\\"
+  Bounding box overlaps or is to the left of the specified geometry's bounding box.
+  \\"\\"\\"
   bboxOverlapsOrLeftOf: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`&>\` operator.\\"\\"\\"
+  \\"\\"\\"
+  Bounding box overlaps or is to the right of the specified geometry's bounding box.
+  \\"\\"\\"
   bboxOverlapsOrRightOf: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`>>\` operator.\\"\\"\\"
+  \\"\\"\\"
+  Bounding box is strictly to the right of the specified geometry's bounding box.
+  \\"\\"\\"
   bboxRightOf: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Contains\` function.\\"\\"\\"
+  \\"\\"\\"
+  No points of the specified geometry lie in the exterior, and at least one
+  point of the interior of the specified geometry lies in the interior.
+  \\"\\"\\"
   contains: GeoJSON
 
   \\"\\"\\"
-  Matches the specified geometry using the \`ST_ContainsProperly\` function.
+  The specified geometry intersects the interior but not the boundary (or exterior).
   \\"\\"\\"
   containsProperly: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_CoveredBy\` function.\\"\\"\\"
+  \\"\\"\\"No point is outside the specified geometry.\\"\\"\\"
   coveredBy: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Covers\` function.\\"\\"\\"
+  \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
   covers: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Crosses\` function.\\"\\"\\"
+  \\"\\"\\"They have some, but not all, interior points in common.\\"\\"\\"
   crosses: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Disjoint\` function.\\"\\"\\"
+  \\"\\"\\"They do not share any space together.\\"\\"\\"
   disjoint: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Equals\` function.\\"\\"\\"
+  \\"\\"\\"They represent the same geometry. Directionality is ignored.\\"\\"\\"
   equals: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`=\` operator.\\"\\"\\"
+  \\"\\"\\"Coordinates and coordinate order are the same as specified geometry.\\"\\"\\"
   exactlyEquals: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Intersects\` function.\\"\\"\\"
+  \\"\\"\\"They share any portion of space in 2D.\\"\\"\\"
   intersects: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_3DIntersects\` function.\\"\\"\\"
+  \\"\\"\\"They share any portion of space in 3D.\\"\\"\\"
   intersects3D: GeoJSON
 
   \\"\\"\\"
-  Matches the specified geometry using the \`ST_OrderingEquals\` function.
+  They represent the same geometry and points are in the same directional order.
   \\"\\"\\"
   orderingEquals: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Overlaps\` function.\\"\\"\\"
+  \\"\\"\\"
+  They share space, are of the same dimension, but are not completely contained by each other.
+  \\"\\"\\"
   overlaps: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Touches\` function.\\"\\"\\"
+  \\"\\"\\"
+  They have at least one point in common, but their interiors do not intersect.
+  \\"\\"\\"
   touches: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Within\` function.\\"\\"\\"
+  \\"\\"\\"Completely inside the specified geometry.\\"\\"\\"
   within: GeoJSON
 }
 
@@ -566,86 +629,107 @@ type GeometryMultipoint implements GeometryInterface {
 A filter to be used against GeometryMultipoint fields. All fields are combined with a logical ‘and.’
 \\"\\"\\"
 input GeometryMultipointFilter {
-  \\"\\"\\"Matches the specified geometry using the \`|>>\` operator.\\"\\"\\"
+  \\"\\"\\"Bounding box is strictly above the specified geometry's bounding box.\\"\\"\\"
   bboxAbove: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`<<|\` operator.\\"\\"\\"
+  \\"\\"\\"Bounding box is strictly below the specified geometry's bounding box.\\"\\"\\"
   bboxBelow: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`~\` operator.\\"\\"\\"
+  \\"\\"\\"Bounding box contains the specified geometry's bounding box.\\"\\"\\"
   bboxContains: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`~=\` operator.\\"\\"\\"
+  \\"\\"\\"Bounding box is the same as the specified geometry's bounding box.\\"\\"\\"
   bboxEquals: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`&&\` operator.\\"\\"\\"
+  \\"\\"\\"2D bounding box intersects the specified geometry's 2D bounding box.\\"\\"\\"
   bboxIntersects2D: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`&&&\` operator.\\"\\"\\"
+  \\"\\"\\"
+  n-D bounding box intersects the specified geometry's n-D bounding box.
+  \\"\\"\\"
   bboxIntersectsND: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`<<\` operator.\\"\\"\\"
+  \\"\\"\\"
+  Bounding box is strictly to the left of the specified geometry's bounding box.
+  \\"\\"\\"
   bboxLeftOf: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`|&>\` operator.\\"\\"\\"
+  \\"\\"\\"
+  Bounding box overlaps or is above the specified geometry's bounding box.
+  \\"\\"\\"
   bboxOverlapsOrAbove: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`&<|\` operator.\\"\\"\\"
+  \\"\\"\\"
+  Bounding box overlaps or is below the specified geometry's bounding box.
+  \\"\\"\\"
   bboxOverlapsOrBelow: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`&<\` operator.\\"\\"\\"
+  \\"\\"\\"
+  Bounding box overlaps or is to the left of the specified geometry's bounding box.
+  \\"\\"\\"
   bboxOverlapsOrLeftOf: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`&>\` operator.\\"\\"\\"
+  \\"\\"\\"
+  Bounding box overlaps or is to the right of the specified geometry's bounding box.
+  \\"\\"\\"
   bboxOverlapsOrRightOf: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`>>\` operator.\\"\\"\\"
+  \\"\\"\\"
+  Bounding box is strictly to the right of the specified geometry's bounding box.
+  \\"\\"\\"
   bboxRightOf: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Contains\` function.\\"\\"\\"
+  \\"\\"\\"
+  No points of the specified geometry lie in the exterior, and at least one
+  point of the interior of the specified geometry lies in the interior.
+  \\"\\"\\"
   contains: GeoJSON
 
   \\"\\"\\"
-  Matches the specified geometry using the \`ST_ContainsProperly\` function.
+  The specified geometry intersects the interior but not the boundary (or exterior).
   \\"\\"\\"
   containsProperly: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_CoveredBy\` function.\\"\\"\\"
+  \\"\\"\\"No point is outside the specified geometry.\\"\\"\\"
   coveredBy: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Covers\` function.\\"\\"\\"
+  \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
   covers: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Crosses\` function.\\"\\"\\"
+  \\"\\"\\"They have some, but not all, interior points in common.\\"\\"\\"
   crosses: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Disjoint\` function.\\"\\"\\"
+  \\"\\"\\"They do not share any space together.\\"\\"\\"
   disjoint: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Equals\` function.\\"\\"\\"
+  \\"\\"\\"They represent the same geometry. Directionality is ignored.\\"\\"\\"
   equals: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`=\` operator.\\"\\"\\"
+  \\"\\"\\"Coordinates and coordinate order are the same as specified geometry.\\"\\"\\"
   exactlyEquals: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Intersects\` function.\\"\\"\\"
+  \\"\\"\\"They share any portion of space in 2D.\\"\\"\\"
   intersects: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_3DIntersects\` function.\\"\\"\\"
+  \\"\\"\\"They share any portion of space in 3D.\\"\\"\\"
   intersects3D: GeoJSON
 
   \\"\\"\\"
-  Matches the specified geometry using the \`ST_OrderingEquals\` function.
+  They represent the same geometry and points are in the same directional order.
   \\"\\"\\"
   orderingEquals: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Overlaps\` function.\\"\\"\\"
+  \\"\\"\\"
+  They share space, are of the same dimension, but are not completely contained by each other.
+  \\"\\"\\"
   overlaps: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Touches\` function.\\"\\"\\"
+  \\"\\"\\"
+  They have at least one point in common, but their interiors do not intersect.
+  \\"\\"\\"
   touches: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Within\` function.\\"\\"\\"
+  \\"\\"\\"Completely inside the specified geometry.\\"\\"\\"
   within: GeoJSON
 }
 
@@ -658,86 +742,107 @@ type GeometryMultipolygon implements GeometryInterface {
 A filter to be used against GeometryMultipolygon fields. All fields are combined with a logical ‘and.’
 \\"\\"\\"
 input GeometryMultipolygonFilter {
-  \\"\\"\\"Matches the specified geometry using the \`|>>\` operator.\\"\\"\\"
+  \\"\\"\\"Bounding box is strictly above the specified geometry's bounding box.\\"\\"\\"
   bboxAbove: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`<<|\` operator.\\"\\"\\"
+  \\"\\"\\"Bounding box is strictly below the specified geometry's bounding box.\\"\\"\\"
   bboxBelow: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`~\` operator.\\"\\"\\"
+  \\"\\"\\"Bounding box contains the specified geometry's bounding box.\\"\\"\\"
   bboxContains: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`~=\` operator.\\"\\"\\"
+  \\"\\"\\"Bounding box is the same as the specified geometry's bounding box.\\"\\"\\"
   bboxEquals: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`&&\` operator.\\"\\"\\"
+  \\"\\"\\"2D bounding box intersects the specified geometry's 2D bounding box.\\"\\"\\"
   bboxIntersects2D: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`&&&\` operator.\\"\\"\\"
+  \\"\\"\\"
+  n-D bounding box intersects the specified geometry's n-D bounding box.
+  \\"\\"\\"
   bboxIntersectsND: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`<<\` operator.\\"\\"\\"
+  \\"\\"\\"
+  Bounding box is strictly to the left of the specified geometry's bounding box.
+  \\"\\"\\"
   bboxLeftOf: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`|&>\` operator.\\"\\"\\"
+  \\"\\"\\"
+  Bounding box overlaps or is above the specified geometry's bounding box.
+  \\"\\"\\"
   bboxOverlapsOrAbove: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`&<|\` operator.\\"\\"\\"
+  \\"\\"\\"
+  Bounding box overlaps or is below the specified geometry's bounding box.
+  \\"\\"\\"
   bboxOverlapsOrBelow: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`&<\` operator.\\"\\"\\"
+  \\"\\"\\"
+  Bounding box overlaps or is to the left of the specified geometry's bounding box.
+  \\"\\"\\"
   bboxOverlapsOrLeftOf: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`&>\` operator.\\"\\"\\"
+  \\"\\"\\"
+  Bounding box overlaps or is to the right of the specified geometry's bounding box.
+  \\"\\"\\"
   bboxOverlapsOrRightOf: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`>>\` operator.\\"\\"\\"
+  \\"\\"\\"
+  Bounding box is strictly to the right of the specified geometry's bounding box.
+  \\"\\"\\"
   bboxRightOf: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Contains\` function.\\"\\"\\"
+  \\"\\"\\"
+  No points of the specified geometry lie in the exterior, and at least one
+  point of the interior of the specified geometry lies in the interior.
+  \\"\\"\\"
   contains: GeoJSON
 
   \\"\\"\\"
-  Matches the specified geometry using the \`ST_ContainsProperly\` function.
+  The specified geometry intersects the interior but not the boundary (or exterior).
   \\"\\"\\"
   containsProperly: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_CoveredBy\` function.\\"\\"\\"
+  \\"\\"\\"No point is outside the specified geometry.\\"\\"\\"
   coveredBy: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Covers\` function.\\"\\"\\"
+  \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
   covers: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Crosses\` function.\\"\\"\\"
+  \\"\\"\\"They have some, but not all, interior points in common.\\"\\"\\"
   crosses: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Disjoint\` function.\\"\\"\\"
+  \\"\\"\\"They do not share any space together.\\"\\"\\"
   disjoint: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Equals\` function.\\"\\"\\"
+  \\"\\"\\"They represent the same geometry. Directionality is ignored.\\"\\"\\"
   equals: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`=\` operator.\\"\\"\\"
+  \\"\\"\\"Coordinates and coordinate order are the same as specified geometry.\\"\\"\\"
   exactlyEquals: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Intersects\` function.\\"\\"\\"
+  \\"\\"\\"They share any portion of space in 2D.\\"\\"\\"
   intersects: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_3DIntersects\` function.\\"\\"\\"
+  \\"\\"\\"They share any portion of space in 3D.\\"\\"\\"
   intersects3D: GeoJSON
 
   \\"\\"\\"
-  Matches the specified geometry using the \`ST_OrderingEquals\` function.
+  They represent the same geometry and points are in the same directional order.
   \\"\\"\\"
   orderingEquals: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Overlaps\` function.\\"\\"\\"
+  \\"\\"\\"
+  They share space, are of the same dimension, but are not completely contained by each other.
+  \\"\\"\\"
   overlaps: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Touches\` function.\\"\\"\\"
+  \\"\\"\\"
+  They have at least one point in common, but their interiors do not intersect.
+  \\"\\"\\"
   touches: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Within\` function.\\"\\"\\"
+  \\"\\"\\"Completely inside the specified geometry.\\"\\"\\"
   within: GeoJSON
 }
 
@@ -751,86 +856,107 @@ type GeometryPoint implements GeometryInterface {
 A filter to be used against GeometryPoint fields. All fields are combined with a logical ‘and.’
 \\"\\"\\"
 input GeometryPointFilter {
-  \\"\\"\\"Matches the specified geometry using the \`|>>\` operator.\\"\\"\\"
+  \\"\\"\\"Bounding box is strictly above the specified geometry's bounding box.\\"\\"\\"
   bboxAbove: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`<<|\` operator.\\"\\"\\"
+  \\"\\"\\"Bounding box is strictly below the specified geometry's bounding box.\\"\\"\\"
   bboxBelow: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`~\` operator.\\"\\"\\"
+  \\"\\"\\"Bounding box contains the specified geometry's bounding box.\\"\\"\\"
   bboxContains: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`~=\` operator.\\"\\"\\"
+  \\"\\"\\"Bounding box is the same as the specified geometry's bounding box.\\"\\"\\"
   bboxEquals: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`&&\` operator.\\"\\"\\"
+  \\"\\"\\"2D bounding box intersects the specified geometry's 2D bounding box.\\"\\"\\"
   bboxIntersects2D: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`&&&\` operator.\\"\\"\\"
+  \\"\\"\\"
+  n-D bounding box intersects the specified geometry's n-D bounding box.
+  \\"\\"\\"
   bboxIntersectsND: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`<<\` operator.\\"\\"\\"
+  \\"\\"\\"
+  Bounding box is strictly to the left of the specified geometry's bounding box.
+  \\"\\"\\"
   bboxLeftOf: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`|&>\` operator.\\"\\"\\"
+  \\"\\"\\"
+  Bounding box overlaps or is above the specified geometry's bounding box.
+  \\"\\"\\"
   bboxOverlapsOrAbove: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`&<|\` operator.\\"\\"\\"
+  \\"\\"\\"
+  Bounding box overlaps or is below the specified geometry's bounding box.
+  \\"\\"\\"
   bboxOverlapsOrBelow: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`&<\` operator.\\"\\"\\"
+  \\"\\"\\"
+  Bounding box overlaps or is to the left of the specified geometry's bounding box.
+  \\"\\"\\"
   bboxOverlapsOrLeftOf: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`&>\` operator.\\"\\"\\"
+  \\"\\"\\"
+  Bounding box overlaps or is to the right of the specified geometry's bounding box.
+  \\"\\"\\"
   bboxOverlapsOrRightOf: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`>>\` operator.\\"\\"\\"
+  \\"\\"\\"
+  Bounding box is strictly to the right of the specified geometry's bounding box.
+  \\"\\"\\"
   bboxRightOf: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Contains\` function.\\"\\"\\"
+  \\"\\"\\"
+  No points of the specified geometry lie in the exterior, and at least one
+  point of the interior of the specified geometry lies in the interior.
+  \\"\\"\\"
   contains: GeoJSON
 
   \\"\\"\\"
-  Matches the specified geometry using the \`ST_ContainsProperly\` function.
+  The specified geometry intersects the interior but not the boundary (or exterior).
   \\"\\"\\"
   containsProperly: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_CoveredBy\` function.\\"\\"\\"
+  \\"\\"\\"No point is outside the specified geometry.\\"\\"\\"
   coveredBy: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Covers\` function.\\"\\"\\"
+  \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
   covers: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Crosses\` function.\\"\\"\\"
+  \\"\\"\\"They have some, but not all, interior points in common.\\"\\"\\"
   crosses: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Disjoint\` function.\\"\\"\\"
+  \\"\\"\\"They do not share any space together.\\"\\"\\"
   disjoint: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Equals\` function.\\"\\"\\"
+  \\"\\"\\"They represent the same geometry. Directionality is ignored.\\"\\"\\"
   equals: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`=\` operator.\\"\\"\\"
+  \\"\\"\\"Coordinates and coordinate order are the same as specified geometry.\\"\\"\\"
   exactlyEquals: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Intersects\` function.\\"\\"\\"
+  \\"\\"\\"They share any portion of space in 2D.\\"\\"\\"
   intersects: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_3DIntersects\` function.\\"\\"\\"
+  \\"\\"\\"They share any portion of space in 3D.\\"\\"\\"
   intersects3D: GeoJSON
 
   \\"\\"\\"
-  Matches the specified geometry using the \`ST_OrderingEquals\` function.
+  They represent the same geometry and points are in the same directional order.
   \\"\\"\\"
   orderingEquals: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Overlaps\` function.\\"\\"\\"
+  \\"\\"\\"
+  They share space, are of the same dimension, but are not completely contained by each other.
+  \\"\\"\\"
   overlaps: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Touches\` function.\\"\\"\\"
+  \\"\\"\\"
+  They have at least one point in common, but their interiors do not intersect.
+  \\"\\"\\"
   touches: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Within\` function.\\"\\"\\"
+  \\"\\"\\"Completely inside the specified geometry.\\"\\"\\"
   within: GeoJSON
 }
 
@@ -844,86 +970,107 @@ type GeometryPolygon implements GeometryInterface {
 A filter to be used against GeometryPolygon fields. All fields are combined with a logical ‘and.’
 \\"\\"\\"
 input GeometryPolygonFilter {
-  \\"\\"\\"Matches the specified geometry using the \`|>>\` operator.\\"\\"\\"
+  \\"\\"\\"Bounding box is strictly above the specified geometry's bounding box.\\"\\"\\"
   bboxAbove: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`<<|\` operator.\\"\\"\\"
+  \\"\\"\\"Bounding box is strictly below the specified geometry's bounding box.\\"\\"\\"
   bboxBelow: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`~\` operator.\\"\\"\\"
+  \\"\\"\\"Bounding box contains the specified geometry's bounding box.\\"\\"\\"
   bboxContains: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`~=\` operator.\\"\\"\\"
+  \\"\\"\\"Bounding box is the same as the specified geometry's bounding box.\\"\\"\\"
   bboxEquals: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`&&\` operator.\\"\\"\\"
+  \\"\\"\\"2D bounding box intersects the specified geometry's 2D bounding box.\\"\\"\\"
   bboxIntersects2D: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`&&&\` operator.\\"\\"\\"
+  \\"\\"\\"
+  n-D bounding box intersects the specified geometry's n-D bounding box.
+  \\"\\"\\"
   bboxIntersectsND: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`<<\` operator.\\"\\"\\"
+  \\"\\"\\"
+  Bounding box is strictly to the left of the specified geometry's bounding box.
+  \\"\\"\\"
   bboxLeftOf: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`|&>\` operator.\\"\\"\\"
+  \\"\\"\\"
+  Bounding box overlaps or is above the specified geometry's bounding box.
+  \\"\\"\\"
   bboxOverlapsOrAbove: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`&<|\` operator.\\"\\"\\"
+  \\"\\"\\"
+  Bounding box overlaps or is below the specified geometry's bounding box.
+  \\"\\"\\"
   bboxOverlapsOrBelow: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`&<\` operator.\\"\\"\\"
+  \\"\\"\\"
+  Bounding box overlaps or is to the left of the specified geometry's bounding box.
+  \\"\\"\\"
   bboxOverlapsOrLeftOf: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`&>\` operator.\\"\\"\\"
+  \\"\\"\\"
+  Bounding box overlaps or is to the right of the specified geometry's bounding box.
+  \\"\\"\\"
   bboxOverlapsOrRightOf: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`>>\` operator.\\"\\"\\"
+  \\"\\"\\"
+  Bounding box is strictly to the right of the specified geometry's bounding box.
+  \\"\\"\\"
   bboxRightOf: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Contains\` function.\\"\\"\\"
+  \\"\\"\\"
+  No points of the specified geometry lie in the exterior, and at least one
+  point of the interior of the specified geometry lies in the interior.
+  \\"\\"\\"
   contains: GeoJSON
 
   \\"\\"\\"
-  Matches the specified geometry using the \`ST_ContainsProperly\` function.
+  The specified geometry intersects the interior but not the boundary (or exterior).
   \\"\\"\\"
   containsProperly: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_CoveredBy\` function.\\"\\"\\"
+  \\"\\"\\"No point is outside the specified geometry.\\"\\"\\"
   coveredBy: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Covers\` function.\\"\\"\\"
+  \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
   covers: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Crosses\` function.\\"\\"\\"
+  \\"\\"\\"They have some, but not all, interior points in common.\\"\\"\\"
   crosses: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Disjoint\` function.\\"\\"\\"
+  \\"\\"\\"They do not share any space together.\\"\\"\\"
   disjoint: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Equals\` function.\\"\\"\\"
+  \\"\\"\\"They represent the same geometry. Directionality is ignored.\\"\\"\\"
   equals: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`=\` operator.\\"\\"\\"
+  \\"\\"\\"Coordinates and coordinate order are the same as specified geometry.\\"\\"\\"
   exactlyEquals: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Intersects\` function.\\"\\"\\"
+  \\"\\"\\"They share any portion of space in 2D.\\"\\"\\"
   intersects: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_3DIntersects\` function.\\"\\"\\"
+  \\"\\"\\"They share any portion of space in 3D.\\"\\"\\"
   intersects3D: GeoJSON
 
   \\"\\"\\"
-  Matches the specified geometry using the \`ST_OrderingEquals\` function.
+  They represent the same geometry and points are in the same directional order.
   \\"\\"\\"
   orderingEquals: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Overlaps\` function.\\"\\"\\"
+  \\"\\"\\"
+  They share space, are of the same dimension, but are not completely contained by each other.
+  \\"\\"\\"
   overlaps: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Touches\` function.\\"\\"\\"
+  \\"\\"\\"
+  They have at least one point in common, but their interiors do not intersect.
+  \\"\\"\\"
   touches: GeoJSON
 
-  \\"\\"\\"Matches the specified geometry using the \`ST_Within\` function.\\"\\"\\"
+  \\"\\"\\"Completely inside the specified geometry.\\"\\"\\"
   within: GeoJSON
 }
 
