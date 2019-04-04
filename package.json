@@ -17,7 +17,7 @@
     "url": "https://github.com/mattbretl/postgraphile-plugin-connection-filter-postgis/issues"
   },
   "devDependencies": {
-    "@graphile/postgis": "0.0.6",
+    "@graphile/postgis": "0.1.0",
     "eslint": "^5.13.0",
     "eslint-config-prettier": "^4.0.0",
     "eslint-plugin-jest": "^22.2.2",

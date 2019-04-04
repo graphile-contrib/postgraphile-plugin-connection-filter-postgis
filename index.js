@@ -30,7 +30,7 @@ module.exports = function PostGraphileConnectionFilterPostgisPlugin(
     };
     depends("graphile-build-pg", "^4.4.0-beta.4");
     depends("postgraphile-plugin-connection-filter", "^1.0.0-rc.2");
-    //depends("@graphile/postgis", "0.0.6");
+    //depends("@graphile/postgis", "0.1.0");
 
     // Register this plugin
     build.versions = build.extend(build.versions, { [pkg.name]: pkg.version });

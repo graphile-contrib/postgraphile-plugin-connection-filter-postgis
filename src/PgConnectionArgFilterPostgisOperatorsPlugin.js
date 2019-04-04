@@ -17,13 +17,21 @@ module.exports = function PgConnectionArgFilterPostgisOperatorsPlugin(builder) {
     const GEOMETRY = pgGISGeometryType.name;
 
     const gqlTypeNamesByGisBaseTypeName = {
-      geography: [0, 1, 2, 3, 4, 5, 6, 7].map(subtype =>
-        inflection.gisType(pgGISGeographyType, subtype)
-      ),
-      geometry: [0, 1, 2, 3, 4, 5, 6, 7].map(subtype =>
-        inflection.gisType(pgGISGeometryType, subtype)
-      ),
+      geography: [],
+      geometry: [],
     };
+    for (const subtype of [0, 1, 2, 3, 4, 5, 6, 7]) {
+      for (const hasZ of [false, true]) {
+        for (const hasM of [false, true]) {
+          gqlTypeNamesByGisBaseTypeName.geography.push(
+            inflection.gisType(pgGISGeographyType, subtype, hasZ, hasM)
+          );
+          gqlTypeNamesByGisBaseTypeName.geometry.push(
+            inflection.gisType(pgGISGeometryType, subtype, hasZ, hasM)
+          );
+        }
+      }
+    }
 
     let specs = [];
 
