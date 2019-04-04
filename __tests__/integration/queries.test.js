@@ -70,6 +70,7 @@ beforeAll(() => {
             pgClient: pgClient,
           });
           if (result.errors) {
+            // eslint-disable-next-line no-console
             console.log(result.errors.map(e => e.originalError));
           }
           return result;
