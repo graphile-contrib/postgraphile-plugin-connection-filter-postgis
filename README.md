@@ -5,10 +5,10 @@ This plugin exposes additional PostGIS-related fields on the `filter` argument o
 
 ## Usage
 
-Requires `postgraphile@^4.4.0-beta.4` and the following plugins appended prior to this plugin:
+Requires `postgraphile@^4.4.0` and the following plugins appended prior to this plugin:
 
 - `@graphile/postgis@0.1.0`
-- `postgraphile-plugin-connection-filter@^1.0.0-rc.2`
+- `postgraphile-plugin-connection-filter@^1.0.0`
 
 ## Operators
 
