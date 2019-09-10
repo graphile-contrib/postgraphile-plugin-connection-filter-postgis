@@ -160,6 +160,26 @@ type GeographyGeometryCollectionZM implements GeographyInterface & GeographyGeom
   srid: Int!
 }
 
+\\"\\"\\"
+A filter to be used against GeographyGeometry fields. All fields are combined with a logical ‘and.’
+\\"\\"\\"
+input GeographyGeometryFilter {
+  \\"\\"\\"2D bounding box intersects the specified geometry's 2D bounding box.\\"\\"\\"
+  bboxIntersects2D: GeoJSON
+
+  \\"\\"\\"No point is outside the specified geometry.\\"\\"\\"
+  coveredBy: GeoJSON
+
+  \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
+  covers: GeoJSON
+
+  \\"\\"\\"Coordinates and coordinate order are the same as specified geometry.\\"\\"\\"
+  exactlyEquals: GeoJSON
+
+  \\"\\"\\"They share any portion of space in 2D.\\"\\"\\"
+  intersects: GeoJSON
+}
+
 \\"\\"\\"All geography XYM types implement this interface\\"\\"\\"
 interface GeographyGeometryM {
   \\"\\"\\"Converts the object to GeoJSON\\"\\"\\"
@@ -167,6 +187,26 @@ interface GeographyGeometryM {
 
   \\"\\"\\"Spatial reference identifier (SRID)\\"\\"\\"
   srid: Int!
+}
+
+\\"\\"\\"
+A filter to be used against GeographyGeometryM fields. All fields are combined with a logical ‘and.’
+\\"\\"\\"
+input GeographyGeometryMFilter {
+  \\"\\"\\"2D bounding box intersects the specified geometry's 2D bounding box.\\"\\"\\"
+  bboxIntersects2D: GeoJSON
+
+  \\"\\"\\"No point is outside the specified geometry.\\"\\"\\"
+  coveredBy: GeoJSON
+
+  \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
+  covers: GeoJSON
+
+  \\"\\"\\"Coordinates and coordinate order are the same as specified geometry.\\"\\"\\"
+  exactlyEquals: GeoJSON
+
+  \\"\\"\\"They share any portion of space in 2D.\\"\\"\\"
+  intersects: GeoJSON
 }
 
 \\"\\"\\"All geography XYZ types implement this interface\\"\\"\\"
@@ -842,6 +882,114 @@ type GeometryGeometryCollectionZM implements GeometryInterface & GeometryGeometr
   srid: Int!
 }
 
+\\"\\"\\"
+A filter to be used against GeometryGeometry fields. All fields are combined with a logical ‘and.’
+\\"\\"\\"
+input GeometryGeometryFilter {
+  \\"\\"\\"Bounding box is strictly above the specified geometry's bounding box.\\"\\"\\"
+  bboxAbove: GeoJSON
+
+  \\"\\"\\"Bounding box is strictly below the specified geometry's bounding box.\\"\\"\\"
+  bboxBelow: GeoJSON
+
+  \\"\\"\\"Bounding box contains the specified geometry's bounding box.\\"\\"\\"
+  bboxContains: GeoJSON
+
+  \\"\\"\\"Bounding box is the same as the specified geometry's bounding box.\\"\\"\\"
+  bboxEquals: GeoJSON
+
+  \\"\\"\\"2D bounding box intersects the specified geometry's 2D bounding box.\\"\\"\\"
+  bboxIntersects2D: GeoJSON
+
+  \\"\\"\\"
+  n-D bounding box intersects the specified geometry's n-D bounding box.
+  \\"\\"\\"
+  bboxIntersectsND: GeoJSON
+
+  \\"\\"\\"
+  Bounding box is strictly to the left of the specified geometry's bounding box.
+  \\"\\"\\"
+  bboxLeftOf: GeoJSON
+
+  \\"\\"\\"
+  Bounding box overlaps or is above the specified geometry's bounding box.
+  \\"\\"\\"
+  bboxOverlapsOrAbove: GeoJSON
+
+  \\"\\"\\"
+  Bounding box overlaps or is below the specified geometry's bounding box.
+  \\"\\"\\"
+  bboxOverlapsOrBelow: GeoJSON
+
+  \\"\\"\\"
+  Bounding box overlaps or is to the left of the specified geometry's bounding box.
+  \\"\\"\\"
+  bboxOverlapsOrLeftOf: GeoJSON
+
+  \\"\\"\\"
+  Bounding box overlaps or is to the right of the specified geometry's bounding box.
+  \\"\\"\\"
+  bboxOverlapsOrRightOf: GeoJSON
+
+  \\"\\"\\"
+  Bounding box is strictly to the right of the specified geometry's bounding box.
+  \\"\\"\\"
+  bboxRightOf: GeoJSON
+
+  \\"\\"\\"
+  No points of the specified geometry lie in the exterior, and at least one
+  point of the interior of the specified geometry lies in the interior.
+  \\"\\"\\"
+  contains: GeoJSON
+
+  \\"\\"\\"
+  The specified geometry intersects the interior but not the boundary (or exterior).
+  \\"\\"\\"
+  containsProperly: GeoJSON
+
+  \\"\\"\\"No point is outside the specified geometry.\\"\\"\\"
+  coveredBy: GeoJSON
+
+  \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
+  covers: GeoJSON
+
+  \\"\\"\\"They have some, but not all, interior points in common.\\"\\"\\"
+  crosses: GeoJSON
+
+  \\"\\"\\"They do not share any space together.\\"\\"\\"
+  disjoint: GeoJSON
+
+  \\"\\"\\"They represent the same geometry. Directionality is ignored.\\"\\"\\"
+  equals: GeoJSON
+
+  \\"\\"\\"Coordinates and coordinate order are the same as specified geometry.\\"\\"\\"
+  exactlyEquals: GeoJSON
+
+  \\"\\"\\"They share any portion of space in 2D.\\"\\"\\"
+  intersects: GeoJSON
+
+  \\"\\"\\"They share any portion of space in 3D.\\"\\"\\"
+  intersects3D: GeoJSON
+
+  \\"\\"\\"
+  They represent the same geometry and points are in the same directional order.
+  \\"\\"\\"
+  orderingEquals: GeoJSON
+
+  \\"\\"\\"
+  They share space, are of the same dimension, but are not completely contained by each other.
+  \\"\\"\\"
+  overlaps: GeoJSON
+
+  \\"\\"\\"
+  They have at least one point in common, but their interiors do not intersect.
+  \\"\\"\\"
+  touches: GeoJSON
+
+  \\"\\"\\"Completely inside the specified geometry.\\"\\"\\"
+  within: GeoJSON
+}
+
 \\"\\"\\"All geometry XYM types implement this interface\\"\\"\\"
 interface GeometryGeometryM {
   \\"\\"\\"Converts the object to GeoJSON\\"\\"\\"
@@ -849,6 +997,114 @@ interface GeometryGeometryM {
 
   \\"\\"\\"Spatial reference identifier (SRID)\\"\\"\\"
   srid: Int!
+}
+
+\\"\\"\\"
+A filter to be used against GeometryGeometryM fields. All fields are combined with a logical ‘and.’
+\\"\\"\\"
+input GeometryGeometryMFilter {
+  \\"\\"\\"Bounding box is strictly above the specified geometry's bounding box.\\"\\"\\"
+  bboxAbove: GeoJSON
+
+  \\"\\"\\"Bounding box is strictly below the specified geometry's bounding box.\\"\\"\\"
+  bboxBelow: GeoJSON
+
+  \\"\\"\\"Bounding box contains the specified geometry's bounding box.\\"\\"\\"
+  bboxContains: GeoJSON
+
+  \\"\\"\\"Bounding box is the same as the specified geometry's bounding box.\\"\\"\\"
+  bboxEquals: GeoJSON
+
+  \\"\\"\\"2D bounding box intersects the specified geometry's 2D bounding box.\\"\\"\\"
+  bboxIntersects2D: GeoJSON
+
+  \\"\\"\\"
+  n-D bounding box intersects the specified geometry's n-D bounding box.
+  \\"\\"\\"
+  bboxIntersectsND: GeoJSON
+
+  \\"\\"\\"
+  Bounding box is strictly to the left of the specified geometry's bounding box.
+  \\"\\"\\"
+  bboxLeftOf: GeoJSON
+
+  \\"\\"\\"
+  Bounding box overlaps or is above the specified geometry's bounding box.
+  \\"\\"\\"
+  bboxOverlapsOrAbove: GeoJSON
+
+  \\"\\"\\"
+  Bounding box overlaps or is below the specified geometry's bounding box.
+  \\"\\"\\"
+  bboxOverlapsOrBelow: GeoJSON
+
+  \\"\\"\\"
+  Bounding box overlaps or is to the left of the specified geometry's bounding box.
+  \\"\\"\\"
+  bboxOverlapsOrLeftOf: GeoJSON
+
+  \\"\\"\\"
+  Bounding box overlaps or is to the right of the specified geometry's bounding box.
+  \\"\\"\\"
+  bboxOverlapsOrRightOf: GeoJSON
+
+  \\"\\"\\"
+  Bounding box is strictly to the right of the specified geometry's bounding box.
+  \\"\\"\\"
+  bboxRightOf: GeoJSON
+
+  \\"\\"\\"
+  No points of the specified geometry lie in the exterior, and at least one
+  point of the interior of the specified geometry lies in the interior.
+  \\"\\"\\"
+  contains: GeoJSON
+
+  \\"\\"\\"
+  The specified geometry intersects the interior but not the boundary (or exterior).
+  \\"\\"\\"
+  containsProperly: GeoJSON
+
+  \\"\\"\\"No point is outside the specified geometry.\\"\\"\\"
+  coveredBy: GeoJSON
+
+  \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
+  covers: GeoJSON
+
+  \\"\\"\\"They have some, but not all, interior points in common.\\"\\"\\"
+  crosses: GeoJSON
+
+  \\"\\"\\"They do not share any space together.\\"\\"\\"
+  disjoint: GeoJSON
+
+  \\"\\"\\"They represent the same geometry. Directionality is ignored.\\"\\"\\"
+  equals: GeoJSON
+
+  \\"\\"\\"Coordinates and coordinate order are the same as specified geometry.\\"\\"\\"
+  exactlyEquals: GeoJSON
+
+  \\"\\"\\"They share any portion of space in 2D.\\"\\"\\"
+  intersects: GeoJSON
+
+  \\"\\"\\"They share any portion of space in 3D.\\"\\"\\"
+  intersects3D: GeoJSON
+
+  \\"\\"\\"
+  They represent the same geometry and points are in the same directional order.
+  \\"\\"\\"
+  orderingEquals: GeoJSON
+
+  \\"\\"\\"
+  They share space, are of the same dimension, but are not completely contained by each other.
+  \\"\\"\\"
+  overlaps: GeoJSON
+
+  \\"\\"\\"
+  They have at least one point in common, but their interiors do not intersect.
+  \\"\\"\\"
+  touches: GeoJSON
+
+  \\"\\"\\"Completely inside the specified geometry.\\"\\"\\"
+  within: GeoJSON
 }
 
 \\"\\"\\"All geometry XYZ types implement this interface\\"\\"\\"
@@ -2328,8 +2584,10 @@ type GeometryPolygonZM implements GeometryInterface & GeometryGeometryZM {
 
 type GisDebug implements Node {
   geog: GeographyInterface
+  geogGeometry: GeographyGeometry
   geogGeometrycollection: GeographyGeometryCollection
   geogGeometrycollectionm: GeographyGeometryCollectionM
+  geogGeometrym: GeographyGeometryM
   geogLinestr: GeographyLineString
   geogLinestrm: GeographyLineStringM
   geogMultilinestr: GeographyMultiLineString
@@ -2343,8 +2601,10 @@ type GisDebug implements Node {
   geogPoly: GeographyPolygon
   geogPolym: GeographyPolygonM
   geom: GeometryInterface
+  geomGeometry: GeometryGeometry
   geomGeometrycollection: GeometryGeometryCollection
   geomGeometrycollectionm: GeometryGeometryCollectionM
+  geomGeometrym: GeometryGeometryM
   geomLinestr: GeometryLineString
   geomLinestrm: GeometryLineStringM
   geomMultilinestr: GeometryMultiLineString
@@ -2373,6 +2633,9 @@ input GisDebugCondition {
   \\"\\"\\"Checks for equality with the object’s \`geog\` field.\\"\\"\\"
   geog: GeoJSON
 
+  \\"\\"\\"Checks for equality with the object’s \`geogGeometry\` field.\\"\\"\\"
+  geogGeometry: GeoJSON
+
   \\"\\"\\"Checks for equality with the object’s \`geogGeometrycollection\` field.\\"\\"\\"
   geogGeometrycollection: GeoJSON
 
@@ -2380,6 +2643,9 @@ input GisDebugCondition {
   Checks for equality with the object’s \`geogGeometrycollectionm\` field.
   \\"\\"\\"
   geogGeometrycollectionm: GeoJSON
+
+  \\"\\"\\"Checks for equality with the object’s \`geogGeometrym\` field.\\"\\"\\"
+  geogGeometrym: GeoJSON
 
   \\"\\"\\"Checks for equality with the object’s \`geogLinestr\` field.\\"\\"\\"
   geogLinestr: GeoJSON
@@ -2420,6 +2686,9 @@ input GisDebugCondition {
   \\"\\"\\"Checks for equality with the object’s \`geom\` field.\\"\\"\\"
   geom: GeoJSON
 
+  \\"\\"\\"Checks for equality with the object’s \`geomGeometry\` field.\\"\\"\\"
+  geomGeometry: GeoJSON
+
   \\"\\"\\"Checks for equality with the object’s \`geomGeometrycollection\` field.\\"\\"\\"
   geomGeometrycollection: GeoJSON
 
@@ -2427,6 +2696,9 @@ input GisDebugCondition {
   Checks for equality with the object’s \`geomGeometrycollectionm\` field.
   \\"\\"\\"
   geomGeometrycollectionm: GeoJSON
+
+  \\"\\"\\"Checks for equality with the object’s \`geomGeometrym\` field.\\"\\"\\"
+  geomGeometrym: GeoJSON
 
   \\"\\"\\"Checks for equality with the object’s \`geomLinestr\` field.\\"\\"\\"
   geomLinestr: GeoJSON
@@ -2475,11 +2747,17 @@ input GisDebugFilter {
   \\"\\"\\"Checks for all expressions in this list.\\"\\"\\"
   and: [GisDebugFilter!]
 
+  \\"\\"\\"Filter by the object’s \`geogGeometry\` field.\\"\\"\\"
+  geogGeometry: GeographyGeometryFilter
+
   \\"\\"\\"Filter by the object’s \`geogGeometrycollection\` field.\\"\\"\\"
   geogGeometrycollection: GeographyGeometryCollectionFilter
 
   \\"\\"\\"Filter by the object’s \`geogGeometrycollectionm\` field.\\"\\"\\"
   geogGeometrycollectionm: GeographyGeometryCollectionMFilter
+
+  \\"\\"\\"Filter by the object’s \`geogGeometrym\` field.\\"\\"\\"
+  geogGeometrym: GeographyGeometryMFilter
 
   \\"\\"\\"Filter by the object’s \`geogLinestr\` field.\\"\\"\\"
   geogLinestr: GeographyLineStringFilter
@@ -2517,11 +2795,17 @@ input GisDebugFilter {
   \\"\\"\\"Filter by the object’s \`geogPolym\` field.\\"\\"\\"
   geogPolym: GeographyPolygonMFilter
 
+  \\"\\"\\"Filter by the object’s \`geomGeometry\` field.\\"\\"\\"
+  geomGeometry: GeometryGeometryFilter
+
   \\"\\"\\"Filter by the object’s \`geomGeometrycollection\` field.\\"\\"\\"
   geomGeometrycollection: GeometryGeometryCollectionFilter
 
   \\"\\"\\"Filter by the object’s \`geomGeometrycollectionm\` field.\\"\\"\\"
   geomGeometrycollectionm: GeometryGeometryCollectionMFilter
+
+  \\"\\"\\"Filter by the object’s \`geomGeometrym\` field.\\"\\"\\"
+  geomGeometrym: GeometryGeometryMFilter
 
   \\"\\"\\"Filter by the object’s \`geomLinestr\` field.\\"\\"\\"
   geomLinestr: GeometryLineStringFilter
@@ -2572,8 +2856,10 @@ input GisDebugFilter {
 \\"\\"\\"An input for mutations affecting \`GisDebug\`\\"\\"\\"
 input GisDebugInput {
   geog: GeoJSON
+  geogGeometry: GeoJSON
   geogGeometrycollection: GeoJSON
   geogGeometrycollectionm: GeoJSON
+  geogGeometrym: GeoJSON
   geogLinestr: GeoJSON
   geogLinestrm: GeoJSON
   geogMultilinestr: GeoJSON
@@ -2587,8 +2873,10 @@ input GisDebugInput {
   geogPoly: GeoJSON
   geogPolym: GeoJSON
   geom: GeoJSON
+  geomGeometry: GeoJSON
   geomGeometrycollection: GeoJSON
   geomGeometrycollectionm: GeoJSON
+  geomGeometrym: GeoJSON
   geomLinestr: GeoJSON
   geomLinestrm: GeoJSON
   geomMultilinestr: GeoJSON
@@ -2609,8 +2897,10 @@ Represents an update to a \`GisDebug\`. Fields that are set will be updated.
 \\"\\"\\"
 input GisDebugPatch {
   geog: GeoJSON
+  geogGeometry: GeoJSON
   geogGeometrycollection: GeoJSON
   geogGeometrycollectionm: GeoJSON
+  geogGeometrym: GeoJSON
   geogLinestr: GeoJSON
   geogLinestrm: GeoJSON
   geogMultilinestr: GeoJSON
@@ -2624,8 +2914,10 @@ input GisDebugPatch {
   geogPoly: GeoJSON
   geogPolym: GeoJSON
   geom: GeoJSON
+  geomGeometry: GeoJSON
   geomGeometrycollection: GeoJSON
   geomGeometrycollectionm: GeoJSON
+  geomGeometrym: GeoJSON
   geomLinestr: GeoJSON
   geomLinestrm: GeoJSON
   geomMultilinestr: GeoJSON
@@ -2671,10 +2963,14 @@ type GisDebugsEdge {
 enum GisDebugsOrderBy {
   GEOG_ASC
   GEOG_DESC
+  GEOG_GEOMETRY_ASC
+  GEOG_GEOMETRY_DESC
   GEOG_GEOMETRYCOLLECTION_ASC
   GEOG_GEOMETRYCOLLECTION_DESC
   GEOG_GEOMETRYCOLLECTIONM_ASC
   GEOG_GEOMETRYCOLLECTIONM_DESC
+  GEOG_GEOMETRYM_ASC
+  GEOG_GEOMETRYM_DESC
   GEOG_LINESTR_ASC
   GEOG_LINESTR_DESC
   GEOG_LINESTRM_ASC
@@ -2701,10 +2997,14 @@ enum GisDebugsOrderBy {
   GEOG_POLYM_DESC
   GEOM_ASC
   GEOM_DESC
+  GEOM_GEOMETRY_ASC
+  GEOM_GEOMETRY_DESC
   GEOM_GEOMETRYCOLLECTION_ASC
   GEOM_GEOMETRYCOLLECTION_DESC
   GEOM_GEOMETRYCOLLECTIONM_ASC
   GEOM_GEOMETRYCOLLECTIONM_DESC
+  GEOM_GEOMETRYM_ASC
+  GEOM_GEOMETRYM_DESC
   GEOM_LINESTR_ASC
   GEOM_LINESTR_DESC
   GEOM_LINESTRM_ASC

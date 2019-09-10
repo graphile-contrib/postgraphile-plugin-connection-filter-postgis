@@ -1,14 +1,20 @@
-create extension if not exists postgis;
+drop extension if exists postgis cascade;
+create extension if not exists postgis with schema public;
 
 drop schema if exists p cascade;
-
 create schema p;
 
 create table p.gis_debug (
   id                        serial primary key,
 
+  ---------------
+  -- GEOGRAPHY --
+  ---------------
+
   geog                      geography,
 
+  -- XY
+  geog_geometry             geography(geometry),
   geog_point                geography(point),
   geog_linestr              geography(linestring),
   geog_poly                 geography(polygon),
@@ -17,6 +23,18 @@ create table p.gis_debug (
   geog_multipoly            geography(multipolygon),
   geog_geometrycollection   geography(geometrycollection),
 
+  -- XYZ
+  -- geog_geometryz            geography(geometryz),
+  -- geog_pointz               geography(pointz),
+  -- geog_linestrz             geography(linestringz),
+  -- geog_polyz                geography(polygonz),
+  -- geog_multipointz          geography(multipointz),
+  -- geog_multilinestrz        geography(multilinestringz),
+  -- geog_multipolyz           geography(multipolygonz),
+  -- geog_geometrycollectionz  geography(geometrycollectionz),
+
+  -- XYM
+  geog_geometrym            geography(geometrym),
   geog_pointm               geography(pointm),
   geog_linestrm             geography(linestringm),
   geog_polym                geography(polygonm),
@@ -25,24 +43,24 @@ create table p.gis_debug (
   geog_multipolym           geography(multipolygonm),
   geog_geometrycollectionm  geography(geometrycollectionm),
 
-  -- geog_pointz               geography(point),
-  -- geog_linestrz             geography(linestring),
-  -- geog_polyz                geography(polygon),
-  -- geog_multipointz          geography(multipoint),
-  -- geog_multilinestrz        geography(multilinestring),
-  -- geog_multipolyz           geography(multipolygon),
-  -- geog_geometrycollectionz  geography(geometrycollection),
+  -- XYZM
+  -- geog_geometryzm           geography(geometryzm),
+  -- geog_pointzm              geography(pointzm),
+  -- geog_linestrzm            geography(linestringzm),
+  -- geog_polyzm               geography(polygonzm),
+  -- geog_multipointmz         geography(multipointzm),
+  -- geog_multilinestrmz       geography(multilinestringzm),
+  -- geog_multipolymz          geography(multipolygonzm),
+  -- geog_geometrycollectionzm geography(geometrycollectionzm),
 
-  -- geog_pointmz              geography(pointm),
-  -- geog_linestrmz            geography(linestringm),
-  -- geog_polymz               geography(polygonm),
-  -- geog_multipointmz         geography(multipointm),
-  -- geog_multilinestrmz       geography(multilinestringm),
-  -- geog_multipolymz          geography(multipolygonm),
-  -- geog_geometrycollectionmz geography(geometrycollectionm),
+  --------------
+  -- GEOMETRY --
+  --------------
 
   geom                      geometry,
 
+  -- XY
+  geom_geometry             geometry(geometry),
   geom_point                geometry(point),
   geom_linestr              geometry(linestring),
   geom_poly                 geometry(polygon),
@@ -51,6 +69,18 @@ create table p.gis_debug (
   geom_multipoly            geometry(multipolygon),
   geom_geometrycollection   geometry(geometrycollection),
 
+  -- XYZ
+  -- geom_geometryz            geometry(geometryz),
+  -- geom_pointz               geometry(pointz),
+  -- geom_linestrz             geometry(linestringz),
+  -- geom_polyz                geometry(polygonz),
+  -- geom_multipointz          geometry(multipointz),
+  -- geom_multilinestrz        geometry(multilinestringz),
+  -- geom_multipolyz           geometry(multipolygonz),
+  -- geom_geometrycollectionz  geometry(geometrycollectionz),
+
+  -- XYM
+  geom_geometrym            geometry(geometrym),
   geom_pointm               geometry(pointm),
   geom_linestrm             geometry(linestringm),
   geom_polym                geometry(polygonm),
@@ -59,19 +89,13 @@ create table p.gis_debug (
   geom_multipolym           geometry(multipolygonm),
   geom_geometrycollectionm  geometry(geometrycollectionm)
 
-  -- geom_pointz               geometry(point),
-  -- geom_linestrz             geometry(linestring),
-  -- geom_polyz                geometry(polygon),
-  -- geom_multipointz          geometry(multipoint),
-  -- geom_multilinestrz        geometry(multilinestring),
-  -- geom_multipolyz           geometry(multipolygon),
-  -- geom_geometrycollectionz  geometry(geometrycollection),
-
-  -- geom_pointmz              geometry(pointm),
-  -- geom_linestrmz            geometry(linestringm),
-  -- geom_polymz               geometry(polygonm),
-  -- geom_multipointmz         geometry(multipointm),
-  -- geom_multilinestrmz       geometry(multilinestringm),
-  -- geom_multipolymz          geometry(multipolygonm),
-  -- geom_geometrycollectionmz geometry(geometrycollectionm),
+  -- XYZM
+  -- geom_geometryzm           geometry(geometryzm),
+  -- geom_pointzm              geometry(pointzm),
+  -- geom_linestrzm            geometry(linestringzm),
+  -- geom_polyzm               geometry(polygonzm),
+  -- geom_multipointzm         geometry(multipointzm),
+  -- geom_multilinestrzm       geometry(multilinestringzm),
+  -- geom_multipolyzm          geometry(multipolygonzm),
+  -- geom_geometrycollectionzm geometry(geometrycollectionzm),
 );
