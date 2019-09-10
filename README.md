@@ -1,4 +1,4 @@
-[![Package on npm](https://img.shields.io/npm/v/postgraphile-plugin-connection-filter-postgis.svg)](https://www.npmjs.com/package/postgraphile-plugin-connection-filter-postgis) [![CircleCI](https://circleci.com/gh/mattbretl/postgraphile-plugin-connection-filter-postgis.svg?style=svg)](https://circleci.com/gh/mattbretl/postgraphile-plugin-connection-filter-postgis)
+[![Package on npm](https://img.shields.io/npm/v/postgraphile-plugin-connection-filter-postgis.svg)](https://www.npmjs.com/package/postgraphile-plugin-connection-filter-postgis) [![CircleCI](https://circleci.com/gh/graphile-contrib/postgraphile-plugin-connection-filter-postgis.svg?style=svg)](https://circleci.com/gh/graphile-contrib/postgraphile-plugin-connection-filter-postgis)
 
 # postgraphile-plugin-connection-filter-postgis
 This plugin exposes additional PostGIS-related fields on the `filter` argument of Connections.
