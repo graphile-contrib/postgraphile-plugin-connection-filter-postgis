@@ -20,6 +20,12 @@ module.exports = function PgConnectionArgFilterPostgisOperatorsPlugin(builder) {
       geography: [],
       geometry: [],
     };
+    gqlTypeNamesByGisBaseTypeName.geography.push(
+      inflection.gisInterfaceName(pgGISGeographyType)
+    );
+    gqlTypeNamesByGisBaseTypeName.geometry.push(
+      inflection.gisInterfaceName(pgGISGeometryType)
+    );
     for (const subtype of [0, 1, 2, 3, 4, 5, 6, 7]) {
       for (const hasZ of [false, true]) {
         for (const hasM of [false, true]) {
