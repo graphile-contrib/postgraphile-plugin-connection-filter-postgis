@@ -1,6 +1,62 @@
 query AllGisDebugs($point: GeoJSON = { type: "Point", coordinates: [30, 10] }) {
   allGisDebugs(
     filter: {
+      geom: {
+        intersects3D: $point
+        contains: $point
+        containsProperly: $point
+        coveredBy: $point
+        covers: $point
+        crosses: $point
+        disjoint: $point
+        equals: $point
+        intersects: $point
+        orderingEquals: $point
+        overlaps: $point
+        touches: $point
+        within: $point
+        exactlyEquals: $point
+        bboxIntersects2D: $point
+        bboxIntersectsND: $point
+        bboxOverlapsOrLeftOf: $point
+        bboxOverlapsOrBelow: $point
+        bboxOverlapsOrRightOf: $point
+        bboxOverlapsOrAbove: $point
+        bboxLeftOf: $point
+        bboxBelow: $point
+        bboxRightOf: $point
+        bboxAbove: $point
+        bboxContains: $point
+        bboxEquals: $point
+      }
+      geomGeometry: {
+        intersects3D: $point
+        contains: $point
+        containsProperly: $point
+        coveredBy: $point
+        covers: $point
+        crosses: $point
+        disjoint: $point
+        equals: $point
+        intersects: $point
+        orderingEquals: $point
+        overlaps: $point
+        touches: $point
+        within: $point
+        exactlyEquals: $point
+        bboxIntersects2D: $point
+        bboxIntersectsND: $point
+        bboxOverlapsOrLeftOf: $point
+        bboxOverlapsOrBelow: $point
+        bboxOverlapsOrRightOf: $point
+        bboxOverlapsOrAbove: $point
+        bboxLeftOf: $point
+        bboxBelow: $point
+        bboxRightOf: $point
+        bboxAbove: $point
+        bboxContains: $point
+        bboxEquals: $point
+      }
       geomPoint: {
         intersects3D: $point
         contains: $point
@@ -170,6 +226,34 @@ query AllGisDebugs($point: GeoJSON = { type: "Point", coordinates: [30, 10] }) {
         bboxEquals: $point
       }
       geomGeometrycollection: {
+        intersects3D: $point
+        contains: $point
+        containsProperly: $point
+        coveredBy: $point
+        covers: $point
+        crosses: $point
+        disjoint: $point
+        equals: $point
+        intersects: $point
+        orderingEquals: $point
+        overlaps: $point
+        touches: $point
+        within: $point
+        exactlyEquals: $point
+        bboxIntersects2D: $point
+        bboxIntersectsND: $point
+        bboxOverlapsOrLeftOf: $point
+        bboxOverlapsOrBelow: $point
+        bboxOverlapsOrRightOf: $point
+        bboxOverlapsOrAbove: $point
+        bboxLeftOf: $point
+        bboxBelow: $point
+        bboxRightOf: $point
+        bboxAbove: $point
+        bboxContains: $point
+        bboxEquals: $point
+      }
+      geomGeometrym: {
         intersects3D: $point
         contains: $point
         containsProperly: $point

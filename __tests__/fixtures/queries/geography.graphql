@@ -1,6 +1,20 @@
 query AllGisDebugs($point: GeoJSON = { type: "Point", coordinates: [30, 10] }) {
   allGisDebugs(
     filter: {
+      geog: {
+        coveredBy: $point
+        covers: $point
+        intersects: $point
+        exactlyEquals: $point
+        bboxIntersects2D: $point
+      }
+      geogGeometry: {
+        coveredBy: $point
+        covers: $point
+        intersects: $point
+        exactlyEquals: $point
+        bboxIntersects2D: $point
+      }
       geogPoint: {
         coveredBy: $point
         covers: $point
@@ -44,6 +58,13 @@ query AllGisDebugs($point: GeoJSON = { type: "Point", coordinates: [30, 10] }) {
         bboxIntersects2D: $point
       }
       geogGeometrycollection: {
+        coveredBy: $point
+        covers: $point
+        intersects: $point
+        exactlyEquals: $point
+        bboxIntersects2D: $point
+      }
+      geogGeometrym: {
         coveredBy: $point
         covers: $point
         intersects: $point
