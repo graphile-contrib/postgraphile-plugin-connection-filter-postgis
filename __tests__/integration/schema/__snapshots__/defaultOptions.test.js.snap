@@ -236,6 +236,26 @@ interface GeographyInterface {
   srid: Int!
 }
 
+\\"\\"\\"
+A filter to be used against GeographyInterface fields. All fields are combined with a logical ‘and.’
+\\"\\"\\"
+input GeographyInterfaceFilter {
+  \\"\\"\\"2D bounding box intersects the specified geometry's 2D bounding box.\\"\\"\\"
+  bboxIntersects2D: GeoJSON
+
+  \\"\\"\\"No point is outside the specified geometry.\\"\\"\\"
+  coveredBy: GeoJSON
+
+  \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
+  covers: GeoJSON
+
+  \\"\\"\\"Coordinates and coordinate order are the same as specified geometry.\\"\\"\\"
+  exactlyEquals: GeoJSON
+
+  \\"\\"\\"They share any portion of space in 2D.\\"\\"\\"
+  intersects: GeoJSON
+}
+
 type GeographyLineString implements GeographyInterface & GeographyGeometry {
   geojson: GeoJSON
   points: [GeographyPoint]
@@ -1132,6 +1152,114 @@ interface GeometryInterface {
 
   \\"\\"\\"Spatial reference identifier (SRID)\\"\\"\\"
   srid: Int!
+}
+
+\\"\\"\\"
+A filter to be used against GeometryInterface fields. All fields are combined with a logical ‘and.’
+\\"\\"\\"
+input GeometryInterfaceFilter {
+  \\"\\"\\"Bounding box is strictly above the specified geometry's bounding box.\\"\\"\\"
+  bboxAbove: GeoJSON
+
+  \\"\\"\\"Bounding box is strictly below the specified geometry's bounding box.\\"\\"\\"
+  bboxBelow: GeoJSON
+
+  \\"\\"\\"Bounding box contains the specified geometry's bounding box.\\"\\"\\"
+  bboxContains: GeoJSON
+
+  \\"\\"\\"Bounding box is the same as the specified geometry's bounding box.\\"\\"\\"
+  bboxEquals: GeoJSON
+
+  \\"\\"\\"2D bounding box intersects the specified geometry's 2D bounding box.\\"\\"\\"
+  bboxIntersects2D: GeoJSON
+
+  \\"\\"\\"
+  n-D bounding box intersects the specified geometry's n-D bounding box.
+  \\"\\"\\"
+  bboxIntersectsND: GeoJSON
+
+  \\"\\"\\"
+  Bounding box is strictly to the left of the specified geometry's bounding box.
+  \\"\\"\\"
+  bboxLeftOf: GeoJSON
+
+  \\"\\"\\"
+  Bounding box overlaps or is above the specified geometry's bounding box.
+  \\"\\"\\"
+  bboxOverlapsOrAbove: GeoJSON
+
+  \\"\\"\\"
+  Bounding box overlaps or is below the specified geometry's bounding box.
+  \\"\\"\\"
+  bboxOverlapsOrBelow: GeoJSON
+
+  \\"\\"\\"
+  Bounding box overlaps or is to the left of the specified geometry's bounding box.
+  \\"\\"\\"
+  bboxOverlapsOrLeftOf: GeoJSON
+
+  \\"\\"\\"
+  Bounding box overlaps or is to the right of the specified geometry's bounding box.
+  \\"\\"\\"
+  bboxOverlapsOrRightOf: GeoJSON
+
+  \\"\\"\\"
+  Bounding box is strictly to the right of the specified geometry's bounding box.
+  \\"\\"\\"
+  bboxRightOf: GeoJSON
+
+  \\"\\"\\"
+  No points of the specified geometry lie in the exterior, and at least one
+  point of the interior of the specified geometry lies in the interior.
+  \\"\\"\\"
+  contains: GeoJSON
+
+  \\"\\"\\"
+  The specified geometry intersects the interior but not the boundary (or exterior).
+  \\"\\"\\"
+  containsProperly: GeoJSON
+
+  \\"\\"\\"No point is outside the specified geometry.\\"\\"\\"
+  coveredBy: GeoJSON
+
+  \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
+  covers: GeoJSON
+
+  \\"\\"\\"They have some, but not all, interior points in common.\\"\\"\\"
+  crosses: GeoJSON
+
+  \\"\\"\\"They do not share any space together.\\"\\"\\"
+  disjoint: GeoJSON
+
+  \\"\\"\\"They represent the same geometry. Directionality is ignored.\\"\\"\\"
+  equals: GeoJSON
+
+  \\"\\"\\"Coordinates and coordinate order are the same as specified geometry.\\"\\"\\"
+  exactlyEquals: GeoJSON
+
+  \\"\\"\\"They share any portion of space in 2D.\\"\\"\\"
+  intersects: GeoJSON
+
+  \\"\\"\\"They share any portion of space in 3D.\\"\\"\\"
+  intersects3D: GeoJSON
+
+  \\"\\"\\"
+  They represent the same geometry and points are in the same directional order.
+  \\"\\"\\"
+  orderingEquals: GeoJSON
+
+  \\"\\"\\"
+  They share space, are of the same dimension, but are not completely contained by each other.
+  \\"\\"\\"
+  overlaps: GeoJSON
+
+  \\"\\"\\"
+  They have at least one point in common, but their interiors do not intersect.
+  \\"\\"\\"
+  touches: GeoJSON
+
+  \\"\\"\\"Completely inside the specified geometry.\\"\\"\\"
+  within: GeoJSON
 }
 
 type GeometryLineString implements GeometryInterface & GeometryGeometry {
@@ -2747,6 +2875,9 @@ input GisDebugFilter {
   \\"\\"\\"Checks for all expressions in this list.\\"\\"\\"
   and: [GisDebugFilter!]
 
+  \\"\\"\\"Filter by the object’s \`geog\` field.\\"\\"\\"
+  geog: GeographyInterfaceFilter
+
   \\"\\"\\"Filter by the object’s \`geogGeometry\` field.\\"\\"\\"
   geogGeometry: GeographyGeometryFilter
 
@@ -2794,6 +2925,9 @@ input GisDebugFilter {
 
   \\"\\"\\"Filter by the object’s \`geogPolym\` field.\\"\\"\\"
   geogPolym: GeographyPolygonMFilter
+
+  \\"\\"\\"Filter by the object’s \`geom\` field.\\"\\"\\"
+  geom: GeometryInterfaceFilter
 
   \\"\\"\\"Filter by the object’s \`geomGeometry\` field.\\"\\"\\"
   geomGeometry: GeometryGeometryFilter
