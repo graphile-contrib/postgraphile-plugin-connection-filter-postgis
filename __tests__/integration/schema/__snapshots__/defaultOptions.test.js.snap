@@ -687,9 +687,7 @@ input GeometryGeometryCollectionFilter {
   \\"\\"\\"2D bounding box intersects the specified geometry's 2D bounding box.\\"\\"\\"
   bboxIntersects2D: GeoJSON
 
-  \\"\\"\\"
-  n-D bounding box intersects the specified geometry's n-D bounding box.
-  \\"\\"\\"
+  \\"\\"\\"n-D bounding box intersects the specified geometry's n-D bounding box.\\"\\"\\"
   bboxIntersectsND: GeoJSON
 
   \\"\\"\\"
@@ -801,9 +799,7 @@ input GeometryGeometryCollectionMFilter {
   \\"\\"\\"2D bounding box intersects the specified geometry's 2D bounding box.\\"\\"\\"
   bboxIntersects2D: GeoJSON
 
-  \\"\\"\\"
-  n-D bounding box intersects the specified geometry's n-D bounding box.
-  \\"\\"\\"
+  \\"\\"\\"n-D bounding box intersects the specified geometry's n-D bounding box.\\"\\"\\"
   bboxIntersectsND: GeoJSON
 
   \\"\\"\\"
@@ -921,9 +917,7 @@ input GeometryGeometryFilter {
   \\"\\"\\"2D bounding box intersects the specified geometry's 2D bounding box.\\"\\"\\"
   bboxIntersects2D: GeoJSON
 
-  \\"\\"\\"
-  n-D bounding box intersects the specified geometry's n-D bounding box.
-  \\"\\"\\"
+  \\"\\"\\"n-D bounding box intersects the specified geometry's n-D bounding box.\\"\\"\\"
   bboxIntersectsND: GeoJSON
 
   \\"\\"\\"
@@ -1038,9 +1032,7 @@ input GeometryGeometryMFilter {
   \\"\\"\\"2D bounding box intersects the specified geometry's 2D bounding box.\\"\\"\\"
   bboxIntersects2D: GeoJSON
 
-  \\"\\"\\"
-  n-D bounding box intersects the specified geometry's n-D bounding box.
-  \\"\\"\\"
+  \\"\\"\\"n-D bounding box intersects the specified geometry's n-D bounding box.\\"\\"\\"
   bboxIntersectsND: GeoJSON
 
   \\"\\"\\"
@@ -1173,9 +1165,7 @@ input GeometryInterfaceFilter {
   \\"\\"\\"2D bounding box intersects the specified geometry's 2D bounding box.\\"\\"\\"
   bboxIntersects2D: GeoJSON
 
-  \\"\\"\\"
-  n-D bounding box intersects the specified geometry's n-D bounding box.
-  \\"\\"\\"
+  \\"\\"\\"n-D bounding box intersects the specified geometry's n-D bounding box.\\"\\"\\"
   bboxIntersectsND: GeoJSON
 
   \\"\\"\\"
@@ -1287,9 +1277,7 @@ input GeometryLineStringFilter {
   \\"\\"\\"2D bounding box intersects the specified geometry's 2D bounding box.\\"\\"\\"
   bboxIntersects2D: GeoJSON
 
-  \\"\\"\\"
-  n-D bounding box intersects the specified geometry's n-D bounding box.
-  \\"\\"\\"
+  \\"\\"\\"n-D bounding box intersects the specified geometry's n-D bounding box.\\"\\"\\"
   bboxIntersectsND: GeoJSON
 
   \\"\\"\\"
@@ -1401,9 +1389,7 @@ input GeometryLineStringMFilter {
   \\"\\"\\"2D bounding box intersects the specified geometry's 2D bounding box.\\"\\"\\"
   bboxIntersects2D: GeoJSON
 
-  \\"\\"\\"
-  n-D bounding box intersects the specified geometry's n-D bounding box.
-  \\"\\"\\"
+  \\"\\"\\"n-D bounding box intersects the specified geometry's n-D bounding box.\\"\\"\\"
   bboxIntersectsND: GeoJSON
 
   \\"\\"\\"
@@ -1527,9 +1513,7 @@ input GeometryMultiLineStringFilter {
   \\"\\"\\"2D bounding box intersects the specified geometry's 2D bounding box.\\"\\"\\"
   bboxIntersects2D: GeoJSON
 
-  \\"\\"\\"
-  n-D bounding box intersects the specified geometry's n-D bounding box.
-  \\"\\"\\"
+  \\"\\"\\"n-D bounding box intersects the specified geometry's n-D bounding box.\\"\\"\\"
   bboxIntersectsND: GeoJSON
 
   \\"\\"\\"
@@ -1641,9 +1625,7 @@ input GeometryMultiLineStringMFilter {
   \\"\\"\\"2D bounding box intersects the specified geometry's 2D bounding box.\\"\\"\\"
   bboxIntersects2D: GeoJSON
 
-  \\"\\"\\"
-  n-D bounding box intersects the specified geometry's n-D bounding box.
-  \\"\\"\\"
+  \\"\\"\\"n-D bounding box intersects the specified geometry's n-D bounding box.\\"\\"\\"
   bboxIntersectsND: GeoJSON
 
   \\"\\"\\"
@@ -1767,9 +1749,7 @@ input GeometryMultiPointFilter {
   \\"\\"\\"2D bounding box intersects the specified geometry's 2D bounding box.\\"\\"\\"
   bboxIntersects2D: GeoJSON
 
-  \\"\\"\\"
-  n-D bounding box intersects the specified geometry's n-D bounding box.
-  \\"\\"\\"
+  \\"\\"\\"n-D bounding box intersects the specified geometry's n-D bounding box.\\"\\"\\"
   bboxIntersectsND: GeoJSON
 
   \\"\\"\\"
@@ -1881,9 +1861,7 @@ input GeometryMultiPointMFilter {
   \\"\\"\\"2D bounding box intersects the specified geometry's 2D bounding box.\\"\\"\\"
   bboxIntersects2D: GeoJSON
 
-  \\"\\"\\"
-  n-D bounding box intersects the specified geometry's n-D bounding box.
-  \\"\\"\\"
+  \\"\\"\\"n-D bounding box intersects the specified geometry's n-D bounding box.\\"\\"\\"
   bboxIntersectsND: GeoJSON
 
   \\"\\"\\"
@@ -2007,9 +1985,7 @@ input GeometryMultiPolygonFilter {
   \\"\\"\\"2D bounding box intersects the specified geometry's 2D bounding box.\\"\\"\\"
   bboxIntersects2D: GeoJSON
 
-  \\"\\"\\"
-  n-D bounding box intersects the specified geometry's n-D bounding box.
-  \\"\\"\\"
+  \\"\\"\\"n-D bounding box intersects the specified geometry's n-D bounding box.\\"\\"\\"
   bboxIntersectsND: GeoJSON
 
   \\"\\"\\"
@@ -2121,9 +2097,7 @@ input GeometryMultiPolygonMFilter {
   \\"\\"\\"2D bounding box intersects the specified geometry's 2D bounding box.\\"\\"\\"
   bboxIntersects2D: GeoJSON
 
-  \\"\\"\\"
-  n-D bounding box intersects the specified geometry's n-D bounding box.
-  \\"\\"\\"
+  \\"\\"\\"n-D bounding box intersects the specified geometry's n-D bounding box.\\"\\"\\"
   bboxIntersectsND: GeoJSON
 
   \\"\\"\\"
@@ -2248,9 +2222,7 @@ input GeometryPointFilter {
   \\"\\"\\"2D bounding box intersects the specified geometry's 2D bounding box.\\"\\"\\"
   bboxIntersects2D: GeoJSON
 
-  \\"\\"\\"
-  n-D bounding box intersects the specified geometry's n-D bounding box.
-  \\"\\"\\"
+  \\"\\"\\"n-D bounding box intersects the specified geometry's n-D bounding box.\\"\\"\\"
   bboxIntersectsND: GeoJSON
 
   \\"\\"\\"
@@ -2363,9 +2335,7 @@ input GeometryPointMFilter {
   \\"\\"\\"2D bounding box intersects the specified geometry's 2D bounding box.\\"\\"\\"
   bboxIntersects2D: GeoJSON
 
-  \\"\\"\\"
-  n-D bounding box intersects the specified geometry's n-D bounding box.
-  \\"\\"\\"
+  \\"\\"\\"n-D bounding box intersects the specified geometry's n-D bounding box.\\"\\"\\"
   bboxIntersectsND: GeoJSON
 
   \\"\\"\\"
@@ -2492,9 +2462,7 @@ input GeometryPolygonFilter {
   \\"\\"\\"2D bounding box intersects the specified geometry's 2D bounding box.\\"\\"\\"
   bboxIntersects2D: GeoJSON
 
-  \\"\\"\\"
-  n-D bounding box intersects the specified geometry's n-D bounding box.
-  \\"\\"\\"
+  \\"\\"\\"n-D bounding box intersects the specified geometry's n-D bounding box.\\"\\"\\"
   bboxIntersectsND: GeoJSON
 
   \\"\\"\\"
@@ -2607,9 +2575,7 @@ input GeometryPolygonMFilter {
   \\"\\"\\"2D bounding box intersects the specified geometry's 2D bounding box.\\"\\"\\"
   bboxIntersects2D: GeoJSON
 
-  \\"\\"\\"
-  n-D bounding box intersects the specified geometry's n-D bounding box.
-  \\"\\"\\"
+  \\"\\"\\"n-D bounding box intersects the specified geometry's n-D bounding box.\\"\\"\\"
   bboxIntersectsND: GeoJSON
 
   \\"\\"\\"
@@ -2767,9 +2733,7 @@ input GisDebugCondition {
   \\"\\"\\"Checks for equality with the object’s \`geogGeometrycollection\` field.\\"\\"\\"
   geogGeometrycollection: GeoJSON
 
-  \\"\\"\\"
-  Checks for equality with the object’s \`geogGeometrycollectionm\` field.
-  \\"\\"\\"
+  \\"\\"\\"Checks for equality with the object’s \`geogGeometrycollectionm\` field.\\"\\"\\"
   geogGeometrycollectionm: GeoJSON
 
   \\"\\"\\"Checks for equality with the object’s \`geogGeometrym\` field.\\"\\"\\"
@@ -2820,9 +2784,7 @@ input GisDebugCondition {
   \\"\\"\\"Checks for equality with the object’s \`geomGeometrycollection\` field.\\"\\"\\"
   geomGeometrycollection: GeoJSON
 
-  \\"\\"\\"
-  Checks for equality with the object’s \`geomGeometrycollectionm\` field.
-  \\"\\"\\"
+  \\"\\"\\"Checks for equality with the object’s \`geomGeometrycollectionm\` field.\\"\\"\\"
   geomGeometrycollectionm: GeoJSON
 
   \\"\\"\\"Checks for equality with the object’s \`geomGeometrym\` field.\\"\\"\\"
