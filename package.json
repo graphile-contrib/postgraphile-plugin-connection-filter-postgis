@@ -4,7 +4,7 @@
   "description": "PostGIS filtering options in PostGraphile",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint **/*.js",
+    "lint": "eslint .",
     "test": "scripts/test"
   },
   "repository": {
