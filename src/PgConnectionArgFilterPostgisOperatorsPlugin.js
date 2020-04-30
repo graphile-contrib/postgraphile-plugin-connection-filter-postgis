@@ -42,7 +42,7 @@ module.exports = function PgConnectionArgFilterPostgisOperatorsPlugin(builder) {
     let specs = [];
 
     // Functions
-    for (const [fn, baseTypeNames, fieldName, description] of [
+    for (const [fn, baseTypeNames, operatorName, description] of [
       [
         "ST_3DIntersects",
         [GEOMETRY],
@@ -128,20 +128,17 @@ module.exports = function PgConnectionArgFilterPostgisOperatorsPlugin(builder) {
             ? sql.identifier(fn.toLowerCase())
             : sql.identifier(pgGISExtension.namespaceName, fn.toLowerCase());
         specs.push({
-          fieldName,
+          typeNames: gqlTypeNamesByGisBaseTypeName[baseTypeName],
+          operatorName,
           description,
           resolveType: fieldType => fieldType,
           resolve: (i, v) => sql.query`${sqlGisFunction}(${i}, ${v})`,
-          options: {
-            allowedFieldTypes: gqlTypeNamesByGisBaseTypeName[baseTypeName],
-            allowedListTypes: ["NonList"],
-          },
         });
       }
     }
 
     // Operators
-    for (const [op, baseTypeNames, fieldName, description] of [
+    for (const [op, baseTypeNames, operatorName, description] of [
       [
         "=",
         [GEOMETRY, GEOGRAPHY],
@@ -223,28 +220,25 @@ module.exports = function PgConnectionArgFilterPostgisOperatorsPlugin(builder) {
     ]) {
       for (const baseTypeName of baseTypeNames) {
         specs.push({
-          fieldName,
+          typeNames: gqlTypeNamesByGisBaseTypeName[baseTypeName],
+          operatorName,
           description,
           resolveType: fieldType => fieldType,
           resolve: (i, v) => sql.query`${i} ${sql.raw(op)} ${v}`,
-          options: {
-            allowedFieldTypes: gqlTypeNamesByGisBaseTypeName[baseTypeName],
-            allowedListTypes: ["NonList"],
-          },
         });
       }
     }
 
-    specs.sort((a, b) => (a.fieldName > b.fieldName ? 1 : -1));
+    specs.sort((a, b) => (a.operatorName > b.operatorName ? 1 : -1));
 
     specs.forEach(
-      ({ fieldName, description, resolveType, resolve, options }) => {
+      ({ typeNames, operatorName, description, resolveType, resolve }) => {
         addConnectionFilterOperator(
-          fieldName,
+          typeNames,
+          operatorName,
           description,
           resolveType,
-          resolve,
-          options
+          resolve
         );
       }
     );
