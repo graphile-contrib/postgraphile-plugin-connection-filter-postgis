@@ -121,6 +121,12 @@ module.exports = function PgConnectionArgFilterPostgisOperatorsPlugin(builder) {
         "within",
         "Completely inside the specified geometry.",
       ],
+      [
+        "ST_DWithin",
+        [GEOMETRY, GEOGRAPHY],
+        "dwithin",
+        "Returns true if the geometries are within the specified distance of one another.",
+      ],
     ]) {
       for (const baseTypeName of baseTypeNames) {
         const sqlGisFunction =
@@ -137,7 +143,7 @@ module.exports = function PgConnectionArgFilterPostgisOperatorsPlugin(builder) {
       }
     }
 
-    // Operators
+    // Operators - https://postgis.net/docs/reference.html#Operators
     for (const [op, baseTypeNames, operatorName, description] of [
       [
         "=",
@@ -216,6 +222,36 @@ module.exports = function PgConnectionArgFilterPostgisOperatorsPlugin(builder) {
         [GEOMETRY],
         "bboxEquals",
         "Bounding box is the same as the specified geometry's bounding box.",
+      ],
+      [
+        "<->",
+        [GEOMETRY, GEOGRAPHY],
+        "2DDistance",
+        "Returns the 2D distance between A and B",
+      ],
+      [
+        "|-|",
+        [GEOMETRY],
+        "trajectoriesDistance",
+        "Returns the distance between A and B trajectories at their closest point of approach.",
+      ],
+      [
+        "<#>",
+        [GEOMETRY],
+        "2DbboxDistance",
+        "Returns the 2D distance between A and B bounding boxes.",
+      ],
+      [
+        "<<->>",
+        [GEOMETRY],
+        "2DCentroidbboxDistance",
+        "Returns the n-D distance between the centroids of A and B bounding boxes.",
+      ],
+      [
+        "<<#>>",
+        [GEOMETRY],
+        "nDbboxDistance",
+        "Returns the n-D distance between A and B bounding boxes.",
       ],
     ]) {
       for (const baseTypeName of baseTypeNames) {

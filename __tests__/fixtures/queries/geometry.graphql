@@ -28,6 +28,7 @@ query AllGisDebugs($point: GeoJSON = { type: "Point", coordinates: [30, 10] }) {
         bboxAbove: $point
         bboxContains: $point
         bboxEquals: $point
+        dwithin: $point
       }
       geomGeometry: {
         intersects3D: $point
@@ -84,6 +85,7 @@ query AllGisDebugs($point: GeoJSON = { type: "Point", coordinates: [30, 10] }) {
         bboxAbove: $point
         bboxContains: $point
         bboxEquals: $point
+        dwithin: $point
       }
       geomLinestr: {
         intersects3D: $point
@@ -252,6 +254,7 @@ query AllGisDebugs($point: GeoJSON = { type: "Point", coordinates: [30, 10] }) {
         bboxAbove: $point
         bboxContains: $point
         bboxEquals: $point
+        dwithin: $point
       }
       geomGeometrym: {
         intersects3D: $point
@@ -308,6 +311,7 @@ query AllGisDebugs($point: GeoJSON = { type: "Point", coordinates: [30, 10] }) {
         bboxAbove: $point
         bboxContains: $point
         bboxEquals: $point
+        dwithin: $point
       }
       geomLinestrm: {
         intersects3D: $point
@@ -476,6 +480,7 @@ query AllGisDebugs($point: GeoJSON = { type: "Point", coordinates: [30, 10] }) {
         bboxAbove: $point
         bboxContains: $point
         bboxEquals: $point
+        dwithin: $point
       }
     }
   ) {
