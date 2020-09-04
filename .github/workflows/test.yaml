@@ -4,7 +4,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: huaxk/postgis-action@v1
+      - uses: ireznik/postgis-action@master
         with:
           postgresql version: "12"
           postgresql password: "123"
