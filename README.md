@@ -45,11 +45,11 @@ Requires `postgraphile@^4.5.0` and the following plugins appended prior to this 
 | \|>>             | geometry            | bboxAbove              |
 | ~                | geometry            | bboxContains           |
 | ~=               | geometry            | bboxEquals             |
-| <->              | geometry, geography | 2DDistance             |
-| \|-\|            | geometry            | trajectoriesDistance   |
-| <#>              | geommetry           | 2DbboxDistance         |
-| <<->>            | geometry            | 2DCentroidbboxDistance |
-| <<#>>            | geometry            | nDbboxDistance         |
+| <->              | geometry, geography | distance2D             |
+| \|-\|            | geometry            | distanceTrajectories   |
+| <#>              | geommetry           | distancebbox2D         |
+| <<->>            | geometry            | distancebboxCentroid2D |
+| <<#>>            | geometry            | distancebboxnD         |
 
 ## Development
 

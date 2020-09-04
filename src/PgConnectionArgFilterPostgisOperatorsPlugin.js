@@ -226,7 +226,7 @@ module.exports = function PgConnectionArgFilterPostgisOperatorsPlugin(builder) {
       [
         "<->",
         [GEOMETRY, GEOGRAPHY],
-        "2DDistance",
+        "distance2D",
         "Returns the 2D distance between A and B",
       ],
       [
@@ -238,19 +238,19 @@ module.exports = function PgConnectionArgFilterPostgisOperatorsPlugin(builder) {
       [
         "<#>",
         [GEOMETRY],
-        "2DbboxDistance",
+        "distancebbox2D",
         "Returns the 2D distance between A and B bounding boxes.",
       ],
       [
         "<<->>",
         [GEOMETRY],
-        "2DCentroidbboxDistance",
+        "distancebboxCentroid2D",
         "Returns the n-D distance between the centroids of A and B bounding boxes.",
       ],
       [
         "<<#>>",
         [GEOMETRY],
-        "nDbboxDistance",
+        "distancebboxnD",
         "Returns the n-D distance between A and B bounding boxes.",
       ],
     ]) {
