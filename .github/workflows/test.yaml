@@ -6,7 +6,7 @@ jobs:
     steps:
       - uses: ireznik/postgis-action@master
         with:
-          postgresql version: "12"
+          postgresql version: "12-master"
           postgresql password: "123"
           postgresql user: "postgres"
           postgresql db: "test"
