@@ -15,6 +15,7 @@ query AllGisDebugs($point: GeoJSON = { type: "Point", coordinates: [30, 10] }) {
         intersects: $point
         exactlyEquals: $point
         bboxIntersects2D: $point
+        dwithin: $point
       }
       geogPoint: {
         coveredBy: $point
@@ -30,6 +31,7 @@ query AllGisDebugs($point: GeoJSON = { type: "Point", coordinates: [30, 10] }) {
         intersects: $point
         exactlyEquals: $point
         bboxIntersects2D: $point
+        dwithin: $point
       }
       geogPoly: {
         coveredBy: $point
@@ -37,6 +39,7 @@ query AllGisDebugs($point: GeoJSON = { type: "Point", coordinates: [30, 10] }) {
         intersects: $point
         exactlyEquals: $point
         bboxIntersects2D: $point
+        dwithin: $point
       }
       geogMultipoint: {
         coveredBy: $point
@@ -44,6 +47,7 @@ query AllGisDebugs($point: GeoJSON = { type: "Point", coordinates: [30, 10] }) {
         intersects: $point
         exactlyEquals: $point
         bboxIntersects2D: $point
+        dwithin: $point
       }
       geogMultilinestr: {
         coveredBy: $point
@@ -51,6 +55,7 @@ query AllGisDebugs($point: GeoJSON = { type: "Point", coordinates: [30, 10] }) {
         intersects: $point
         exactlyEquals: $point
         bboxIntersects2D: $point
+        dwithin: $point
       }
       geogMultipoly: {
         coveredBy: $point
@@ -58,6 +63,7 @@ query AllGisDebugs($point: GeoJSON = { type: "Point", coordinates: [30, 10] }) {
         intersects: $point
         exactlyEquals: $point
         bboxIntersects2D: $point
+        dwithin: $point
       }
       geogGeometrycollection: {
         coveredBy: $point
@@ -65,6 +71,7 @@ query AllGisDebugs($point: GeoJSON = { type: "Point", coordinates: [30, 10] }) {
         intersects: $point
         exactlyEquals: $point
         bboxIntersects2D: $point
+        dwithin: $point
       }
       geogGeometrym: {
         coveredBy: $point
@@ -72,6 +79,7 @@ query AllGisDebugs($point: GeoJSON = { type: "Point", coordinates: [30, 10] }) {
         intersects: $point
         exactlyEquals: $point
         bboxIntersects2D: $point
+        dwithin: $point
       }
       geogPointm: {
         coveredBy: $point
@@ -79,6 +87,7 @@ query AllGisDebugs($point: GeoJSON = { type: "Point", coordinates: [30, 10] }) {
         intersects: $point
         exactlyEquals: $point
         bboxIntersects2D: $point
+        dwithin: $point
       }
       geogLinestrm: {
         coveredBy: $point
@@ -86,6 +95,7 @@ query AllGisDebugs($point: GeoJSON = { type: "Point", coordinates: [30, 10] }) {
         intersects: $point
         exactlyEquals: $point
         bboxIntersects2D: $point
+        dwithin: $point
       }
       geogPolym: {
         coveredBy: $point
@@ -93,6 +103,7 @@ query AllGisDebugs($point: GeoJSON = { type: "Point", coordinates: [30, 10] }) {
         intersects: $point
         exactlyEquals: $point
         bboxIntersects2D: $point
+        dwithin: $point
       }
       geogMultipointm: {
         coveredBy: $point
@@ -100,6 +111,7 @@ query AllGisDebugs($point: GeoJSON = { type: "Point", coordinates: [30, 10] }) {
         intersects: $point
         exactlyEquals: $point
         bboxIntersects2D: $point
+        dwithin: $point
       }
       geogMultilinestrm: {
         coveredBy: $point
@@ -107,6 +119,7 @@ query AllGisDebugs($point: GeoJSON = { type: "Point", coordinates: [30, 10] }) {
         intersects: $point
         exactlyEquals: $point
         bboxIntersects2D: $point
+        dwithin: $point
       }
       geogMultipolym: {
         coveredBy: $point
@@ -114,6 +127,7 @@ query AllGisDebugs($point: GeoJSON = { type: "Point", coordinates: [30, 10] }) {
         intersects: $point
         exactlyEquals: $point
         bboxIntersects2D: $point
+        dwithin: $point
       }
       geogGeometrycollectionm: {
         coveredBy: $point
@@ -121,6 +135,7 @@ query AllGisDebugs($point: GeoJSON = { type: "Point", coordinates: [30, 10] }) {
         intersects: $point
         exactlyEquals: $point
         bboxIntersects2D: $point
+        dwithin: $point
       }
     }
   ) {
