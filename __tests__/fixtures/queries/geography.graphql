@@ -39,7 +39,6 @@ query AllGisDebugs($point: GeoJSON = { type: "Point", coordinates: [30, 10] }) {
         intersects: $point
         exactlyEquals: $point
         bboxIntersects2D: $point
-        
         dwithin: $point
       }
       geogMultipoint: {
@@ -48,7 +47,6 @@ query AllGisDebugs($point: GeoJSON = { type: "Point", coordinates: [30, 10] }) {
         intersects: $point
         exactlyEquals: $point
         bboxIntersects2D: $point
-        
         dwithin: $point
       }
       geogMultilinestr: {
@@ -57,7 +55,6 @@ query AllGisDebugs($point: GeoJSON = { type: "Point", coordinates: [30, 10] }) {
         intersects: $point
         exactlyEquals: $point
         bboxIntersects2D: $point
-        
         dwithin: $point
       }
       geogMultipoly: {
@@ -66,7 +63,6 @@ query AllGisDebugs($point: GeoJSON = { type: "Point", coordinates: [30, 10] }) {
         intersects: $point
         exactlyEquals: $point
         bboxIntersects2D: $point
-        
         dwithin: $point
       }
       geogGeometrycollection: {
