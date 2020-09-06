@@ -161,8 +161,7 @@ module.exports = function PgConnectionArgFilterPostgisOperatorsPlugin(builder) {
             operatorName,
             description,
             resolveType: fieldType => fieldType,
-            resolve: (i, v, w) =>
-              sql.query`${sqlGisFunction}(${i}, ${v}, ${w})`,
+            resolve: (i, v) => sql.query`${sqlGisFunction}(${i}, ${v})`,
           });
         }
 
@@ -172,8 +171,7 @@ module.exports = function PgConnectionArgFilterPostgisOperatorsPlugin(builder) {
             operatorName,
             description,
             resolveType: fieldType => fieldType,
-            resolve: (i, v, w, x) =>
-              sql.query`${sqlGisFunction}(${i}, ${v}, ${w}, ${x})`,
+            resolve: (i, v) => sql.query`${sqlGisFunction}(${i}, ${v})`,
           });
         }
       }
