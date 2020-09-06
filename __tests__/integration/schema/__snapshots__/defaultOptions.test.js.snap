@@ -115,9 +115,6 @@ input GeographyGeometryCollectionFilter {
   \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
   covers: GeoJSON
 
-  \\"\\"\\"Returns the 2D distance between A and B\\"\\"\\"
-  distance2D: GeoJSON
-
   \\"\\"\\"
   Returns true if the geometries are within the specified distance of one another.
   \\"\\"\\"
@@ -148,9 +145,6 @@ input GeographyGeometryCollectionMFilter {
 
   \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
   covers: GeoJSON
-
-  \\"\\"\\"Returns the 2D distance between A and B\\"\\"\\"
-  distance2D: GeoJSON
 
   \\"\\"\\"
   Returns true if the geometries are within the specified distance of one another.
@@ -189,9 +183,6 @@ input GeographyGeometryFilter {
   \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
   covers: GeoJSON
 
-  \\"\\"\\"Returns the 2D distance between A and B\\"\\"\\"
-  distance2D: GeoJSON
-
   \\"\\"\\"
   Returns true if the geometries are within the specified distance of one another.
   \\"\\"\\"
@@ -225,9 +216,6 @@ input GeographyGeometryMFilter {
 
   \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
   covers: GeoJSON
-
-  \\"\\"\\"Returns the 2D distance between A and B\\"\\"\\"
-  distance2D: GeoJSON
 
   \\"\\"\\"
   Returns true if the geometries are within the specified distance of one another.
@@ -281,9 +269,6 @@ input GeographyInterfaceFilter {
   \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
   covers: GeoJSON
 
-  \\"\\"\\"Returns the 2D distance between A and B\\"\\"\\"
-  distance2D: GeoJSON
-
   \\"\\"\\"
   Returns true if the geometries are within the specified distance of one another.
   \\"\\"\\"
@@ -315,9 +300,6 @@ input GeographyLineStringFilter {
   \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
   covers: GeoJSON
 
-  \\"\\"\\"Returns the 2D distance between A and B\\"\\"\\"
-  distance2D: GeoJSON
-
   \\"\\"\\"
   Returns true if the geometries are within the specified distance of one another.
   \\"\\"\\"
@@ -348,9 +330,6 @@ input GeographyLineStringMFilter {
 
   \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
   covers: GeoJSON
-
-  \\"\\"\\"Returns the 2D distance between A and B\\"\\"\\"
-  distance2D: GeoJSON
 
   \\"\\"\\"
   Returns true if the geometries are within the specified distance of one another.
@@ -395,9 +374,6 @@ input GeographyMultiLineStringFilter {
   \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
   covers: GeoJSON
 
-  \\"\\"\\"Returns the 2D distance between A and B\\"\\"\\"
-  distance2D: GeoJSON
-
   \\"\\"\\"
   Returns true if the geometries are within the specified distance of one another.
   \\"\\"\\"
@@ -428,9 +404,6 @@ input GeographyMultiLineStringMFilter {
 
   \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
   covers: GeoJSON
-
-  \\"\\"\\"Returns the 2D distance between A and B\\"\\"\\"
-  distance2D: GeoJSON
 
   \\"\\"\\"
   Returns true if the geometries are within the specified distance of one another.
@@ -475,9 +448,6 @@ input GeographyMultiPointFilter {
   \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
   covers: GeoJSON
 
-  \\"\\"\\"Returns the 2D distance between A and B\\"\\"\\"
-  distance2D: GeoJSON
-
   \\"\\"\\"
   Returns true if the geometries are within the specified distance of one another.
   \\"\\"\\"
@@ -508,9 +478,6 @@ input GeographyMultiPointMFilter {
 
   \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
   covers: GeoJSON
-
-  \\"\\"\\"Returns the 2D distance between A and B\\"\\"\\"
-  distance2D: GeoJSON
 
   \\"\\"\\"
   Returns true if the geometries are within the specified distance of one another.
@@ -555,9 +522,6 @@ input GeographyMultiPolygonFilter {
   \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
   covers: GeoJSON
 
-  \\"\\"\\"Returns the 2D distance between A and B\\"\\"\\"
-  distance2D: GeoJSON
-
   \\"\\"\\"
   Returns true if the geometries are within the specified distance of one another.
   \\"\\"\\"
@@ -588,9 +552,6 @@ input GeographyMultiPolygonMFilter {
 
   \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
   covers: GeoJSON
-
-  \\"\\"\\"Returns the 2D distance between A and B\\"\\"\\"
-  distance2D: GeoJSON
 
   \\"\\"\\"
   Returns true if the geometries are within the specified distance of one another.
@@ -636,9 +597,6 @@ input GeographyPointFilter {
   \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
   covers: GeoJSON
 
-  \\"\\"\\"Returns the 2D distance between A and B\\"\\"\\"
-  distance2D: GeoJSON
-
   \\"\\"\\"
   Returns true if the geometries are within the specified distance of one another.
   \\"\\"\\"
@@ -670,9 +628,6 @@ input GeographyPointMFilter {
 
   \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
   covers: GeoJSON
-
-  \\"\\"\\"Returns the 2D distance between A and B\\"\\"\\"
-  distance2D: GeoJSON
 
   \\"\\"\\"
   Returns true if the geometries are within the specified distance of one another.
@@ -720,9 +675,6 @@ input GeographyPolygonFilter {
   \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
   covers: GeoJSON
 
-  \\"\\"\\"Returns the 2D distance between A and B\\"\\"\\"
-  distance2D: GeoJSON
-
   \\"\\"\\"
   Returns true if the geometries are within the specified distance of one another.
   \\"\\"\\"
@@ -754,9 +706,6 @@ input GeographyPolygonMFilter {
 
   \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
   covers: GeoJSON
-
-  \\"\\"\\"Returns the 2D distance between A and B\\"\\"\\"
-  distance2D: GeoJSON
 
   \\"\\"\\"
   Returns true if the geometries are within the specified distance of one another.
@@ -879,20 +828,6 @@ input GeometryGeometryCollectionFilter {
   \\"\\"\\"They do not share any space together.\\"\\"\\"
   disjoint: GeoJSON
 
-  \\"\\"\\"Returns the 2D distance between A and B\\"\\"\\"
-  distance2D: GeoJSON
-
-  \\"\\"\\"Returns the 2D distance between A and B bounding boxes.\\"\\"\\"
-  distancebbox2D: GeoJSON
-
-  \\"\\"\\"
-  Returns the n-D distance between the centroids of A and B bounding boxes.
-  \\"\\"\\"
-  distancebboxCentroid2D: GeoJSON
-
-  \\"\\"\\"Returns the n-D distance between A and B bounding boxes.\\"\\"\\"
-  distancebboxnD: GeoJSON
-
   \\"\\"\\"
   Returns true if the geometries are within the specified distance of one another.
   \\"\\"\\"
@@ -924,11 +859,6 @@ input GeometryGeometryCollectionFilter {
   They have at least one point in common, but their interiors do not intersect.
   \\"\\"\\"
   touches: GeoJSON
-
-  \\"\\"\\"
-  Returns the distance between A and B trajectories at their closest point of approach.
-  \\"\\"\\"
-  trajectoriesDistance: GeoJSON
 
   \\"\\"\\"Completely inside the specified geometry.\\"\\"\\"
   within: GeoJSON
@@ -1015,20 +945,6 @@ input GeometryGeometryCollectionMFilter {
   \\"\\"\\"They do not share any space together.\\"\\"\\"
   disjoint: GeoJSON
 
-  \\"\\"\\"Returns the 2D distance between A and B\\"\\"\\"
-  distance2D: GeoJSON
-
-  \\"\\"\\"Returns the 2D distance between A and B bounding boxes.\\"\\"\\"
-  distancebbox2D: GeoJSON
-
-  \\"\\"\\"
-  Returns the n-D distance between the centroids of A and B bounding boxes.
-  \\"\\"\\"
-  distancebboxCentroid2D: GeoJSON
-
-  \\"\\"\\"Returns the n-D distance between A and B bounding boxes.\\"\\"\\"
-  distancebboxnD: GeoJSON
-
   \\"\\"\\"
   Returns true if the geometries are within the specified distance of one another.
   \\"\\"\\"
@@ -1060,11 +976,6 @@ input GeometryGeometryCollectionMFilter {
   They have at least one point in common, but their interiors do not intersect.
   \\"\\"\\"
   touches: GeoJSON
-
-  \\"\\"\\"
-  Returns the distance between A and B trajectories at their closest point of approach.
-  \\"\\"\\"
-  trajectoriesDistance: GeoJSON
 
   \\"\\"\\"Completely inside the specified geometry.\\"\\"\\"
   within: GeoJSON
@@ -1157,20 +1068,6 @@ input GeometryGeometryFilter {
   \\"\\"\\"They do not share any space together.\\"\\"\\"
   disjoint: GeoJSON
 
-  \\"\\"\\"Returns the 2D distance between A and B\\"\\"\\"
-  distance2D: GeoJSON
-
-  \\"\\"\\"Returns the 2D distance between A and B bounding boxes.\\"\\"\\"
-  distancebbox2D: GeoJSON
-
-  \\"\\"\\"
-  Returns the n-D distance between the centroids of A and B bounding boxes.
-  \\"\\"\\"
-  distancebboxCentroid2D: GeoJSON
-
-  \\"\\"\\"Returns the n-D distance between A and B bounding boxes.\\"\\"\\"
-  distancebboxnD: GeoJSON
-
   \\"\\"\\"
   Returns true if the geometries are within the specified distance of one another.
   \\"\\"\\"
@@ -1202,11 +1099,6 @@ input GeometryGeometryFilter {
   They have at least one point in common, but their interiors do not intersect.
   \\"\\"\\"
   touches: GeoJSON
-
-  \\"\\"\\"
-  Returns the distance between A and B trajectories at their closest point of approach.
-  \\"\\"\\"
-  trajectoriesDistance: GeoJSON
 
   \\"\\"\\"Completely inside the specified geometry.\\"\\"\\"
   within: GeoJSON
@@ -1296,20 +1188,6 @@ input GeometryGeometryMFilter {
   \\"\\"\\"They do not share any space together.\\"\\"\\"
   disjoint: GeoJSON
 
-  \\"\\"\\"Returns the 2D distance between A and B\\"\\"\\"
-  distance2D: GeoJSON
-
-  \\"\\"\\"Returns the 2D distance between A and B bounding boxes.\\"\\"\\"
-  distancebbox2D: GeoJSON
-
-  \\"\\"\\"
-  Returns the n-D distance between the centroids of A and B bounding boxes.
-  \\"\\"\\"
-  distancebboxCentroid2D: GeoJSON
-
-  \\"\\"\\"Returns the n-D distance between A and B bounding boxes.\\"\\"\\"
-  distancebboxnD: GeoJSON
-
   \\"\\"\\"
   Returns true if the geometries are within the specified distance of one another.
   \\"\\"\\"
@@ -1341,11 +1219,6 @@ input GeometryGeometryMFilter {
   They have at least one point in common, but their interiors do not intersect.
   \\"\\"\\"
   touches: GeoJSON
-
-  \\"\\"\\"
-  Returns the distance between A and B trajectories at their closest point of approach.
-  \\"\\"\\"
-  trajectoriesDistance: GeoJSON
 
   \\"\\"\\"Completely inside the specified geometry.\\"\\"\\"
   within: GeoJSON
@@ -1453,20 +1326,6 @@ input GeometryInterfaceFilter {
   \\"\\"\\"They do not share any space together.\\"\\"\\"
   disjoint: GeoJSON
 
-  \\"\\"\\"Returns the 2D distance between A and B\\"\\"\\"
-  distance2D: GeoJSON
-
-  \\"\\"\\"Returns the 2D distance between A and B bounding boxes.\\"\\"\\"
-  distancebbox2D: GeoJSON
-
-  \\"\\"\\"
-  Returns the n-D distance between the centroids of A and B bounding boxes.
-  \\"\\"\\"
-  distancebboxCentroid2D: GeoJSON
-
-  \\"\\"\\"Returns the n-D distance between A and B bounding boxes.\\"\\"\\"
-  distancebboxnD: GeoJSON
-
   \\"\\"\\"
   Returns true if the geometries are within the specified distance of one another.
   \\"\\"\\"
@@ -1498,11 +1357,6 @@ input GeometryInterfaceFilter {
   They have at least one point in common, but their interiors do not intersect.
   \\"\\"\\"
   touches: GeoJSON
-
-  \\"\\"\\"
-  Returns the distance between A and B trajectories at their closest point of approach.
-  \\"\\"\\"
-  trajectoriesDistance: GeoJSON
 
   \\"\\"\\"Completely inside the specified geometry.\\"\\"\\"
   within: GeoJSON
@@ -1589,20 +1443,6 @@ input GeometryLineStringFilter {
   \\"\\"\\"They do not share any space together.\\"\\"\\"
   disjoint: GeoJSON
 
-  \\"\\"\\"Returns the 2D distance between A and B\\"\\"\\"
-  distance2D: GeoJSON
-
-  \\"\\"\\"Returns the 2D distance between A and B bounding boxes.\\"\\"\\"
-  distancebbox2D: GeoJSON
-
-  \\"\\"\\"
-  Returns the n-D distance between the centroids of A and B bounding boxes.
-  \\"\\"\\"
-  distancebboxCentroid2D: GeoJSON
-
-  \\"\\"\\"Returns the n-D distance between A and B bounding boxes.\\"\\"\\"
-  distancebboxnD: GeoJSON
-
   \\"\\"\\"
   Returns true if the geometries are within the specified distance of one another.
   \\"\\"\\"
@@ -1634,11 +1474,6 @@ input GeometryLineStringFilter {
   They have at least one point in common, but their interiors do not intersect.
   \\"\\"\\"
   touches: GeoJSON
-
-  \\"\\"\\"
-  Returns the distance between A and B trajectories at their closest point of approach.
-  \\"\\"\\"
-  trajectoriesDistance: GeoJSON
 
   \\"\\"\\"Completely inside the specified geometry.\\"\\"\\"
   within: GeoJSON
@@ -1725,20 +1560,6 @@ input GeometryLineStringMFilter {
   \\"\\"\\"They do not share any space together.\\"\\"\\"
   disjoint: GeoJSON
 
-  \\"\\"\\"Returns the 2D distance between A and B\\"\\"\\"
-  distance2D: GeoJSON
-
-  \\"\\"\\"Returns the 2D distance between A and B bounding boxes.\\"\\"\\"
-  distancebbox2D: GeoJSON
-
-  \\"\\"\\"
-  Returns the n-D distance between the centroids of A and B bounding boxes.
-  \\"\\"\\"
-  distancebboxCentroid2D: GeoJSON
-
-  \\"\\"\\"Returns the n-D distance between A and B bounding boxes.\\"\\"\\"
-  distancebboxnD: GeoJSON
-
   \\"\\"\\"
   Returns true if the geometries are within the specified distance of one another.
   \\"\\"\\"
@@ -1770,11 +1591,6 @@ input GeometryLineStringMFilter {
   They have at least one point in common, but their interiors do not intersect.
   \\"\\"\\"
   touches: GeoJSON
-
-  \\"\\"\\"
-  Returns the distance between A and B trajectories at their closest point of approach.
-  \\"\\"\\"
-  trajectoriesDistance: GeoJSON
 
   \\"\\"\\"Completely inside the specified geometry.\\"\\"\\"
   within: GeoJSON
@@ -1873,20 +1689,6 @@ input GeometryMultiLineStringFilter {
   \\"\\"\\"They do not share any space together.\\"\\"\\"
   disjoint: GeoJSON
 
-  \\"\\"\\"Returns the 2D distance between A and B\\"\\"\\"
-  distance2D: GeoJSON
-
-  \\"\\"\\"Returns the 2D distance between A and B bounding boxes.\\"\\"\\"
-  distancebbox2D: GeoJSON
-
-  \\"\\"\\"
-  Returns the n-D distance between the centroids of A and B bounding boxes.
-  \\"\\"\\"
-  distancebboxCentroid2D: GeoJSON
-
-  \\"\\"\\"Returns the n-D distance between A and B bounding boxes.\\"\\"\\"
-  distancebboxnD: GeoJSON
-
   \\"\\"\\"
   Returns true if the geometries are within the specified distance of one another.
   \\"\\"\\"
@@ -1918,11 +1720,6 @@ input GeometryMultiLineStringFilter {
   They have at least one point in common, but their interiors do not intersect.
   \\"\\"\\"
   touches: GeoJSON
-
-  \\"\\"\\"
-  Returns the distance between A and B trajectories at their closest point of approach.
-  \\"\\"\\"
-  trajectoriesDistance: GeoJSON
 
   \\"\\"\\"Completely inside the specified geometry.\\"\\"\\"
   within: GeoJSON
@@ -2009,20 +1806,6 @@ input GeometryMultiLineStringMFilter {
   \\"\\"\\"They do not share any space together.\\"\\"\\"
   disjoint: GeoJSON
 
-  \\"\\"\\"Returns the 2D distance between A and B\\"\\"\\"
-  distance2D: GeoJSON
-
-  \\"\\"\\"Returns the 2D distance between A and B bounding boxes.\\"\\"\\"
-  distancebbox2D: GeoJSON
-
-  \\"\\"\\"
-  Returns the n-D distance between the centroids of A and B bounding boxes.
-  \\"\\"\\"
-  distancebboxCentroid2D: GeoJSON
-
-  \\"\\"\\"Returns the n-D distance between A and B bounding boxes.\\"\\"\\"
-  distancebboxnD: GeoJSON
-
   \\"\\"\\"
   Returns true if the geometries are within the specified distance of one another.
   \\"\\"\\"
@@ -2054,11 +1837,6 @@ input GeometryMultiLineStringMFilter {
   They have at least one point in common, but their interiors do not intersect.
   \\"\\"\\"
   touches: GeoJSON
-
-  \\"\\"\\"
-  Returns the distance between A and B trajectories at their closest point of approach.
-  \\"\\"\\"
-  trajectoriesDistance: GeoJSON
 
   \\"\\"\\"Completely inside the specified geometry.\\"\\"\\"
   within: GeoJSON
@@ -2157,20 +1935,6 @@ input GeometryMultiPointFilter {
   \\"\\"\\"They do not share any space together.\\"\\"\\"
   disjoint: GeoJSON
 
-  \\"\\"\\"Returns the 2D distance between A and B\\"\\"\\"
-  distance2D: GeoJSON
-
-  \\"\\"\\"Returns the 2D distance between A and B bounding boxes.\\"\\"\\"
-  distancebbox2D: GeoJSON
-
-  \\"\\"\\"
-  Returns the n-D distance between the centroids of A and B bounding boxes.
-  \\"\\"\\"
-  distancebboxCentroid2D: GeoJSON
-
-  \\"\\"\\"Returns the n-D distance between A and B bounding boxes.\\"\\"\\"
-  distancebboxnD: GeoJSON
-
   \\"\\"\\"
   Returns true if the geometries are within the specified distance of one another.
   \\"\\"\\"
@@ -2202,11 +1966,6 @@ input GeometryMultiPointFilter {
   They have at least one point in common, but their interiors do not intersect.
   \\"\\"\\"
   touches: GeoJSON
-
-  \\"\\"\\"
-  Returns the distance between A and B trajectories at their closest point of approach.
-  \\"\\"\\"
-  trajectoriesDistance: GeoJSON
 
   \\"\\"\\"Completely inside the specified geometry.\\"\\"\\"
   within: GeoJSON
@@ -2293,20 +2052,6 @@ input GeometryMultiPointMFilter {
   \\"\\"\\"They do not share any space together.\\"\\"\\"
   disjoint: GeoJSON
 
-  \\"\\"\\"Returns the 2D distance between A and B\\"\\"\\"
-  distance2D: GeoJSON
-
-  \\"\\"\\"Returns the 2D distance between A and B bounding boxes.\\"\\"\\"
-  distancebbox2D: GeoJSON
-
-  \\"\\"\\"
-  Returns the n-D distance between the centroids of A and B bounding boxes.
-  \\"\\"\\"
-  distancebboxCentroid2D: GeoJSON
-
-  \\"\\"\\"Returns the n-D distance between A and B bounding boxes.\\"\\"\\"
-  distancebboxnD: GeoJSON
-
   \\"\\"\\"
   Returns true if the geometries are within the specified distance of one another.
   \\"\\"\\"
@@ -2338,11 +2083,6 @@ input GeometryMultiPointMFilter {
   They have at least one point in common, but their interiors do not intersect.
   \\"\\"\\"
   touches: GeoJSON
-
-  \\"\\"\\"
-  Returns the distance between A and B trajectories at their closest point of approach.
-  \\"\\"\\"
-  trajectoriesDistance: GeoJSON
 
   \\"\\"\\"Completely inside the specified geometry.\\"\\"\\"
   within: GeoJSON
@@ -2441,20 +2181,6 @@ input GeometryMultiPolygonFilter {
   \\"\\"\\"They do not share any space together.\\"\\"\\"
   disjoint: GeoJSON
 
-  \\"\\"\\"Returns the 2D distance between A and B\\"\\"\\"
-  distance2D: GeoJSON
-
-  \\"\\"\\"Returns the 2D distance between A and B bounding boxes.\\"\\"\\"
-  distancebbox2D: GeoJSON
-
-  \\"\\"\\"
-  Returns the n-D distance between the centroids of A and B bounding boxes.
-  \\"\\"\\"
-  distancebboxCentroid2D: GeoJSON
-
-  \\"\\"\\"Returns the n-D distance between A and B bounding boxes.\\"\\"\\"
-  distancebboxnD: GeoJSON
-
   \\"\\"\\"
   Returns true if the geometries are within the specified distance of one another.
   \\"\\"\\"
@@ -2486,11 +2212,6 @@ input GeometryMultiPolygonFilter {
   They have at least one point in common, but their interiors do not intersect.
   \\"\\"\\"
   touches: GeoJSON
-
-  \\"\\"\\"
-  Returns the distance between A and B trajectories at their closest point of approach.
-  \\"\\"\\"
-  trajectoriesDistance: GeoJSON
 
   \\"\\"\\"Completely inside the specified geometry.\\"\\"\\"
   within: GeoJSON
@@ -2577,20 +2298,6 @@ input GeometryMultiPolygonMFilter {
   \\"\\"\\"They do not share any space together.\\"\\"\\"
   disjoint: GeoJSON
 
-  \\"\\"\\"Returns the 2D distance between A and B\\"\\"\\"
-  distance2D: GeoJSON
-
-  \\"\\"\\"Returns the 2D distance between A and B bounding boxes.\\"\\"\\"
-  distancebbox2D: GeoJSON
-
-  \\"\\"\\"
-  Returns the n-D distance between the centroids of A and B bounding boxes.
-  \\"\\"\\"
-  distancebboxCentroid2D: GeoJSON
-
-  \\"\\"\\"Returns the n-D distance between A and B bounding boxes.\\"\\"\\"
-  distancebboxnD: GeoJSON
-
   \\"\\"\\"
   Returns true if the geometries are within the specified distance of one another.
   \\"\\"\\"
@@ -2622,11 +2329,6 @@ input GeometryMultiPolygonMFilter {
   They have at least one point in common, but their interiors do not intersect.
   \\"\\"\\"
   touches: GeoJSON
-
-  \\"\\"\\"
-  Returns the distance between A and B trajectories at their closest point of approach.
-  \\"\\"\\"
-  trajectoriesDistance: GeoJSON
 
   \\"\\"\\"Completely inside the specified geometry.\\"\\"\\"
   within: GeoJSON
@@ -2726,20 +2428,6 @@ input GeometryPointFilter {
   \\"\\"\\"They do not share any space together.\\"\\"\\"
   disjoint: GeoJSON
 
-  \\"\\"\\"Returns the 2D distance between A and B\\"\\"\\"
-  distance2D: GeoJSON
-
-  \\"\\"\\"Returns the 2D distance between A and B bounding boxes.\\"\\"\\"
-  distancebbox2D: GeoJSON
-
-  \\"\\"\\"
-  Returns the n-D distance between the centroids of A and B bounding boxes.
-  \\"\\"\\"
-  distancebboxCentroid2D: GeoJSON
-
-  \\"\\"\\"Returns the n-D distance between A and B bounding boxes.\\"\\"\\"
-  distancebboxnD: GeoJSON
-
   \\"\\"\\"
   Returns true if the geometries are within the specified distance of one another.
   \\"\\"\\"
@@ -2771,11 +2459,6 @@ input GeometryPointFilter {
   They have at least one point in common, but their interiors do not intersect.
   \\"\\"\\"
   touches: GeoJSON
-
-  \\"\\"\\"
-  Returns the distance between A and B trajectories at their closest point of approach.
-  \\"\\"\\"
-  trajectoriesDistance: GeoJSON
 
   \\"\\"\\"Completely inside the specified geometry.\\"\\"\\"
   within: GeoJSON
@@ -2863,20 +2546,6 @@ input GeometryPointMFilter {
   \\"\\"\\"They do not share any space together.\\"\\"\\"
   disjoint: GeoJSON
 
-  \\"\\"\\"Returns the 2D distance between A and B\\"\\"\\"
-  distance2D: GeoJSON
-
-  \\"\\"\\"Returns the 2D distance between A and B bounding boxes.\\"\\"\\"
-  distancebbox2D: GeoJSON
-
-  \\"\\"\\"
-  Returns the n-D distance between the centroids of A and B bounding boxes.
-  \\"\\"\\"
-  distancebboxCentroid2D: GeoJSON
-
-  \\"\\"\\"Returns the n-D distance between A and B bounding boxes.\\"\\"\\"
-  distancebboxnD: GeoJSON
-
   \\"\\"\\"
   Returns true if the geometries are within the specified distance of one another.
   \\"\\"\\"
@@ -2908,11 +2577,6 @@ input GeometryPointMFilter {
   They have at least one point in common, but their interiors do not intersect.
   \\"\\"\\"
   touches: GeoJSON
-
-  \\"\\"\\"
-  Returns the distance between A and B trajectories at their closest point of approach.
-  \\"\\"\\"
-  trajectoriesDistance: GeoJSON
 
   \\"\\"\\"Completely inside the specified geometry.\\"\\"\\"
   within: GeoJSON
@@ -3014,20 +2678,6 @@ input GeometryPolygonFilter {
   \\"\\"\\"They do not share any space together.\\"\\"\\"
   disjoint: GeoJSON
 
-  \\"\\"\\"Returns the 2D distance between A and B\\"\\"\\"
-  distance2D: GeoJSON
-
-  \\"\\"\\"Returns the 2D distance between A and B bounding boxes.\\"\\"\\"
-  distancebbox2D: GeoJSON
-
-  \\"\\"\\"
-  Returns the n-D distance between the centroids of A and B bounding boxes.
-  \\"\\"\\"
-  distancebboxCentroid2D: GeoJSON
-
-  \\"\\"\\"Returns the n-D distance between A and B bounding boxes.\\"\\"\\"
-  distancebboxnD: GeoJSON
-
   \\"\\"\\"
   Returns true if the geometries are within the specified distance of one another.
   \\"\\"\\"
@@ -3059,11 +2709,6 @@ input GeometryPolygonFilter {
   They have at least one point in common, but their interiors do not intersect.
   \\"\\"\\"
   touches: GeoJSON
-
-  \\"\\"\\"
-  Returns the distance between A and B trajectories at their closest point of approach.
-  \\"\\"\\"
-  trajectoriesDistance: GeoJSON
 
   \\"\\"\\"Completely inside the specified geometry.\\"\\"\\"
   within: GeoJSON
@@ -3151,20 +2796,6 @@ input GeometryPolygonMFilter {
   \\"\\"\\"They do not share any space together.\\"\\"\\"
   disjoint: GeoJSON
 
-  \\"\\"\\"Returns the 2D distance between A and B\\"\\"\\"
-  distance2D: GeoJSON
-
-  \\"\\"\\"Returns the 2D distance between A and B bounding boxes.\\"\\"\\"
-  distancebbox2D: GeoJSON
-
-  \\"\\"\\"
-  Returns the n-D distance between the centroids of A and B bounding boxes.
-  \\"\\"\\"
-  distancebboxCentroid2D: GeoJSON
-
-  \\"\\"\\"Returns the n-D distance between A and B bounding boxes.\\"\\"\\"
-  distancebboxnD: GeoJSON
-
   \\"\\"\\"
   Returns true if the geometries are within the specified distance of one another.
   \\"\\"\\"
@@ -3196,11 +2827,6 @@ input GeometryPolygonMFilter {
   They have at least one point in common, but their interiors do not intersect.
   \\"\\"\\"
   touches: GeoJSON
-
-  \\"\\"\\"
-  Returns the distance between A and B trajectories at their closest point of approach.
-  \\"\\"\\"
-  trajectoriesDistance: GeoJSON
 
   \\"\\"\\"Completely inside the specified geometry.\\"\\"\\"
   within: GeoJSON

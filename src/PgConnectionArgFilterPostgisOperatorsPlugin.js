@@ -161,7 +161,8 @@ module.exports = function PgConnectionArgFilterPostgisOperatorsPlugin(builder) {
             operatorName,
             description,
             resolveType: fieldType => fieldType,
-            resolve: (i, v) => sql.query`${sqlGisFunction}(${i}, ${v})`,
+            resolve: (identifier, value) =>
+              sql.query`${sqlGisFunction}(${identifier}, ${value})`,
           });
         }
 
@@ -171,7 +172,8 @@ module.exports = function PgConnectionArgFilterPostgisOperatorsPlugin(builder) {
             operatorName,
             description,
             resolveType: fieldType => fieldType,
-            resolve: (i, v) => sql.query`${sqlGisFunction}(${i}, ${v})`,
+            resolve: (identifier, value) =>
+              sql.query`${sqlGisFunction}(${identifier}, ${value})`,
           });
         }
       }
@@ -256,36 +258,6 @@ module.exports = function PgConnectionArgFilterPostgisOperatorsPlugin(builder) {
         [GEOMETRY],
         "bboxEquals",
         "Bounding box is the same as the specified geometry's bounding box.",
-      ],
-      [
-        "<->",
-        [GEOMETRY, GEOGRAPHY],
-        "distance2D",
-        "Returns the 2D distance between A and B",
-      ],
-      [
-        "|-|",
-        [GEOMETRY],
-        "trajectoriesDistance",
-        "Returns the distance between A and B trajectories at their closest point of approach.",
-      ],
-      [
-        "<#>",
-        [GEOMETRY],
-        "distancebbox2D",
-        "Returns the 2D distance between A and B bounding boxes.",
-      ],
-      [
-        "<<->>",
-        [GEOMETRY],
-        "distancebboxCentroid2D",
-        "Returns the n-D distance between the centroids of A and B bounding boxes.",
-      ],
-      [
-        "<<#>>",
-        [GEOMETRY],
-        "distancebboxnD",
-        "Returns the n-D distance between A and B bounding boxes.",
       ],
     ]) {
       for (const baseTypeName of baseTypeNames) {
