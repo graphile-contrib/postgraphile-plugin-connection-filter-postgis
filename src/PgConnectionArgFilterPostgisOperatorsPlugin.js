@@ -137,7 +137,49 @@ module.exports = function PgConnectionArgFilterPostgisOperatorsPlugin(builder) {
       }
     }
 
-    // Operators
+    for (const [fn, baseTypeNames, operatorName, description] of [
+      [
+        "ST_DWithin",
+        [GEOMETRY, GEOGRAPHY],
+        "dwithin",
+        "Returns true if the geometries are within the specified distance of one another.",
+      ],
+    ]) {
+      for (const baseTypeName of baseTypeNames) {
+        const sqlGisFunction =
+          pgGISExtension.namespaceName === "public"
+            ? sql.identifier(fn.toLowerCase())
+            : sql.identifier(pgGISExtension.namespaceName, fn.toLowerCase());
+        const typeNames =
+          gqlTypeNamesByGisBaseTypeName[baseTypeName] !== undefined
+            ? gqlTypeNamesByGisBaseTypeName[baseTypeName]
+            : [baseTypeName];
+
+        if (baseTypeName === GEOMETRY) {
+          specs.push({
+            typeNames: typeNames,
+            operatorName,
+            description,
+            resolveType: fieldType => fieldType,
+            resolve: (identifier, value) =>
+              sql.query`${sqlGisFunction}(${identifier}, ${value})`,
+          });
+        }
+
+        if (baseTypeName === GEOGRAPHY) {
+          specs.push({
+            typeNames: typeNames,
+            operatorName,
+            description,
+            resolveType: fieldType => fieldType,
+            resolve: (identifier, value) =>
+              sql.query`${sqlGisFunction}(${identifier}, ${value})`,
+          });
+        }
+      }
+    }
+
+    // Operators - https://postgis.net/docs/reference.html#Operators
     for (const [op, baseTypeNames, operatorName, description] of [
       [
         "=",

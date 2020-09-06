@@ -115,6 +115,11 @@ input GeographyGeometryCollectionFilter {
   \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
   covers: GeoJSON
 
+  \\"\\"\\"
+  Returns true if the geometries are within the specified distance of one another.
+  \\"\\"\\"
+  dwithin: GeoJSON
+
   \\"\\"\\"Coordinates and coordinate order are the same as specified geometry.\\"\\"\\"
   exactlyEquals: GeoJSON
 
@@ -140,6 +145,11 @@ input GeographyGeometryCollectionMFilter {
 
   \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
   covers: GeoJSON
+
+  \\"\\"\\"
+  Returns true if the geometries are within the specified distance of one another.
+  \\"\\"\\"
+  dwithin: GeoJSON
 
   \\"\\"\\"Coordinates and coordinate order are the same as specified geometry.\\"\\"\\"
   exactlyEquals: GeoJSON
@@ -173,6 +183,11 @@ input GeographyGeometryFilter {
   \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
   covers: GeoJSON
 
+  \\"\\"\\"
+  Returns true if the geometries are within the specified distance of one another.
+  \\"\\"\\"
+  dwithin: GeoJSON
+
   \\"\\"\\"Coordinates and coordinate order are the same as specified geometry.\\"\\"\\"
   exactlyEquals: GeoJSON
 
@@ -201,6 +216,11 @@ input GeographyGeometryMFilter {
 
   \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
   covers: GeoJSON
+
+  \\"\\"\\"
+  Returns true if the geometries are within the specified distance of one another.
+  \\"\\"\\"
+  dwithin: GeoJSON
 
   \\"\\"\\"Coordinates and coordinate order are the same as specified geometry.\\"\\"\\"
   exactlyEquals: GeoJSON
@@ -249,6 +269,11 @@ input GeographyInterfaceFilter {
   \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
   covers: GeoJSON
 
+  \\"\\"\\"
+  Returns true if the geometries are within the specified distance of one another.
+  \\"\\"\\"
+  dwithin: GeoJSON
+
   \\"\\"\\"Coordinates and coordinate order are the same as specified geometry.\\"\\"\\"
   exactlyEquals: GeoJSON
 
@@ -275,6 +300,11 @@ input GeographyLineStringFilter {
   \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
   covers: GeoJSON
 
+  \\"\\"\\"
+  Returns true if the geometries are within the specified distance of one another.
+  \\"\\"\\"
+  dwithin: GeoJSON
+
   \\"\\"\\"Coordinates and coordinate order are the same as specified geometry.\\"\\"\\"
   exactlyEquals: GeoJSON
 
@@ -300,6 +330,11 @@ input GeographyLineStringMFilter {
 
   \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
   covers: GeoJSON
+
+  \\"\\"\\"
+  Returns true if the geometries are within the specified distance of one another.
+  \\"\\"\\"
+  dwithin: GeoJSON
 
   \\"\\"\\"Coordinates and coordinate order are the same as specified geometry.\\"\\"\\"
   exactlyEquals: GeoJSON
@@ -339,6 +374,11 @@ input GeographyMultiLineStringFilter {
   \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
   covers: GeoJSON
 
+  \\"\\"\\"
+  Returns true if the geometries are within the specified distance of one another.
+  \\"\\"\\"
+  dwithin: GeoJSON
+
   \\"\\"\\"Coordinates and coordinate order are the same as specified geometry.\\"\\"\\"
   exactlyEquals: GeoJSON
 
@@ -364,6 +404,11 @@ input GeographyMultiLineStringMFilter {
 
   \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
   covers: GeoJSON
+
+  \\"\\"\\"
+  Returns true if the geometries are within the specified distance of one another.
+  \\"\\"\\"
+  dwithin: GeoJSON
 
   \\"\\"\\"Coordinates and coordinate order are the same as specified geometry.\\"\\"\\"
   exactlyEquals: GeoJSON
@@ -403,6 +448,11 @@ input GeographyMultiPointFilter {
   \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
   covers: GeoJSON
 
+  \\"\\"\\"
+  Returns true if the geometries are within the specified distance of one another.
+  \\"\\"\\"
+  dwithin: GeoJSON
+
   \\"\\"\\"Coordinates and coordinate order are the same as specified geometry.\\"\\"\\"
   exactlyEquals: GeoJSON
 
@@ -428,6 +478,11 @@ input GeographyMultiPointMFilter {
 
   \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
   covers: GeoJSON
+
+  \\"\\"\\"
+  Returns true if the geometries are within the specified distance of one another.
+  \\"\\"\\"
+  dwithin: GeoJSON
 
   \\"\\"\\"Coordinates and coordinate order are the same as specified geometry.\\"\\"\\"
   exactlyEquals: GeoJSON
@@ -467,6 +522,11 @@ input GeographyMultiPolygonFilter {
   \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
   covers: GeoJSON
 
+  \\"\\"\\"
+  Returns true if the geometries are within the specified distance of one another.
+  \\"\\"\\"
+  dwithin: GeoJSON
+
   \\"\\"\\"Coordinates and coordinate order are the same as specified geometry.\\"\\"\\"
   exactlyEquals: GeoJSON
 
@@ -492,6 +552,11 @@ input GeographyMultiPolygonMFilter {
 
   \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
   covers: GeoJSON
+
+  \\"\\"\\"
+  Returns true if the geometries are within the specified distance of one another.
+  \\"\\"\\"
+  dwithin: GeoJSON
 
   \\"\\"\\"Coordinates and coordinate order are the same as specified geometry.\\"\\"\\"
   exactlyEquals: GeoJSON
@@ -532,6 +597,11 @@ input GeographyPointFilter {
   \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
   covers: GeoJSON
 
+  \\"\\"\\"
+  Returns true if the geometries are within the specified distance of one another.
+  \\"\\"\\"
+  dwithin: GeoJSON
+
   \\"\\"\\"Coordinates and coordinate order are the same as specified geometry.\\"\\"\\"
   exactlyEquals: GeoJSON
 
@@ -558,6 +628,11 @@ input GeographyPointMFilter {
 
   \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
   covers: GeoJSON
+
+  \\"\\"\\"
+  Returns true if the geometries are within the specified distance of one another.
+  \\"\\"\\"
+  dwithin: GeoJSON
 
   \\"\\"\\"Coordinates and coordinate order are the same as specified geometry.\\"\\"\\"
   exactlyEquals: GeoJSON
@@ -600,6 +675,11 @@ input GeographyPolygonFilter {
   \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
   covers: GeoJSON
 
+  \\"\\"\\"
+  Returns true if the geometries are within the specified distance of one another.
+  \\"\\"\\"
+  dwithin: GeoJSON
+
   \\"\\"\\"Coordinates and coordinate order are the same as specified geometry.\\"\\"\\"
   exactlyEquals: GeoJSON
 
@@ -626,6 +706,11 @@ input GeographyPolygonMFilter {
 
   \\"\\"\\"No point in the specified geometry is outside.\\"\\"\\"
   covers: GeoJSON
+
+  \\"\\"\\"
+  Returns true if the geometries are within the specified distance of one another.
+  \\"\\"\\"
+  dwithin: GeoJSON
 
   \\"\\"\\"Coordinates and coordinate order are the same as specified geometry.\\"\\"\\"
   exactlyEquals: GeoJSON
@@ -743,6 +828,11 @@ input GeometryGeometryCollectionFilter {
   \\"\\"\\"They do not share any space together.\\"\\"\\"
   disjoint: GeoJSON
 
+  \\"\\"\\"
+  Returns true if the geometries are within the specified distance of one another.
+  \\"\\"\\"
+  dwithin: GeoJSON
+
   \\"\\"\\"They represent the same geometry. Directionality is ignored.\\"\\"\\"
   equals: GeoJSON
 
@@ -854,6 +944,11 @@ input GeometryGeometryCollectionMFilter {
 
   \\"\\"\\"They do not share any space together.\\"\\"\\"
   disjoint: GeoJSON
+
+  \\"\\"\\"
+  Returns true if the geometries are within the specified distance of one another.
+  \\"\\"\\"
+  dwithin: GeoJSON
 
   \\"\\"\\"They represent the same geometry. Directionality is ignored.\\"\\"\\"
   equals: GeoJSON
@@ -973,6 +1068,11 @@ input GeometryGeometryFilter {
   \\"\\"\\"They do not share any space together.\\"\\"\\"
   disjoint: GeoJSON
 
+  \\"\\"\\"
+  Returns true if the geometries are within the specified distance of one another.
+  \\"\\"\\"
+  dwithin: GeoJSON
+
   \\"\\"\\"They represent the same geometry. Directionality is ignored.\\"\\"\\"
   equals: GeoJSON
 
@@ -1087,6 +1187,11 @@ input GeometryGeometryMFilter {
 
   \\"\\"\\"They do not share any space together.\\"\\"\\"
   disjoint: GeoJSON
+
+  \\"\\"\\"
+  Returns true if the geometries are within the specified distance of one another.
+  \\"\\"\\"
+  dwithin: GeoJSON
 
   \\"\\"\\"They represent the same geometry. Directionality is ignored.\\"\\"\\"
   equals: GeoJSON
@@ -1221,6 +1326,11 @@ input GeometryInterfaceFilter {
   \\"\\"\\"They do not share any space together.\\"\\"\\"
   disjoint: GeoJSON
 
+  \\"\\"\\"
+  Returns true if the geometries are within the specified distance of one another.
+  \\"\\"\\"
+  dwithin: GeoJSON
+
   \\"\\"\\"They represent the same geometry. Directionality is ignored.\\"\\"\\"
   equals: GeoJSON
 
@@ -1333,6 +1443,11 @@ input GeometryLineStringFilter {
   \\"\\"\\"They do not share any space together.\\"\\"\\"
   disjoint: GeoJSON
 
+  \\"\\"\\"
+  Returns true if the geometries are within the specified distance of one another.
+  \\"\\"\\"
+  dwithin: GeoJSON
+
   \\"\\"\\"They represent the same geometry. Directionality is ignored.\\"\\"\\"
   equals: GeoJSON
 
@@ -1444,6 +1559,11 @@ input GeometryLineStringMFilter {
 
   \\"\\"\\"They do not share any space together.\\"\\"\\"
   disjoint: GeoJSON
+
+  \\"\\"\\"
+  Returns true if the geometries are within the specified distance of one another.
+  \\"\\"\\"
+  dwithin: GeoJSON
 
   \\"\\"\\"They represent the same geometry. Directionality is ignored.\\"\\"\\"
   equals: GeoJSON
@@ -1569,6 +1689,11 @@ input GeometryMultiLineStringFilter {
   \\"\\"\\"They do not share any space together.\\"\\"\\"
   disjoint: GeoJSON
 
+  \\"\\"\\"
+  Returns true if the geometries are within the specified distance of one another.
+  \\"\\"\\"
+  dwithin: GeoJSON
+
   \\"\\"\\"They represent the same geometry. Directionality is ignored.\\"\\"\\"
   equals: GeoJSON
 
@@ -1680,6 +1805,11 @@ input GeometryMultiLineStringMFilter {
 
   \\"\\"\\"They do not share any space together.\\"\\"\\"
   disjoint: GeoJSON
+
+  \\"\\"\\"
+  Returns true if the geometries are within the specified distance of one another.
+  \\"\\"\\"
+  dwithin: GeoJSON
 
   \\"\\"\\"They represent the same geometry. Directionality is ignored.\\"\\"\\"
   equals: GeoJSON
@@ -1805,6 +1935,11 @@ input GeometryMultiPointFilter {
   \\"\\"\\"They do not share any space together.\\"\\"\\"
   disjoint: GeoJSON
 
+  \\"\\"\\"
+  Returns true if the geometries are within the specified distance of one another.
+  \\"\\"\\"
+  dwithin: GeoJSON
+
   \\"\\"\\"They represent the same geometry. Directionality is ignored.\\"\\"\\"
   equals: GeoJSON
 
@@ -1916,6 +2051,11 @@ input GeometryMultiPointMFilter {
 
   \\"\\"\\"They do not share any space together.\\"\\"\\"
   disjoint: GeoJSON
+
+  \\"\\"\\"
+  Returns true if the geometries are within the specified distance of one another.
+  \\"\\"\\"
+  dwithin: GeoJSON
 
   \\"\\"\\"They represent the same geometry. Directionality is ignored.\\"\\"\\"
   equals: GeoJSON
@@ -2041,6 +2181,11 @@ input GeometryMultiPolygonFilter {
   \\"\\"\\"They do not share any space together.\\"\\"\\"
   disjoint: GeoJSON
 
+  \\"\\"\\"
+  Returns true if the geometries are within the specified distance of one another.
+  \\"\\"\\"
+  dwithin: GeoJSON
+
   \\"\\"\\"They represent the same geometry. Directionality is ignored.\\"\\"\\"
   equals: GeoJSON
 
@@ -2152,6 +2297,11 @@ input GeometryMultiPolygonMFilter {
 
   \\"\\"\\"They do not share any space together.\\"\\"\\"
   disjoint: GeoJSON
+
+  \\"\\"\\"
+  Returns true if the geometries are within the specified distance of one another.
+  \\"\\"\\"
+  dwithin: GeoJSON
 
   \\"\\"\\"They represent the same geometry. Directionality is ignored.\\"\\"\\"
   equals: GeoJSON
@@ -2278,6 +2428,11 @@ input GeometryPointFilter {
   \\"\\"\\"They do not share any space together.\\"\\"\\"
   disjoint: GeoJSON
 
+  \\"\\"\\"
+  Returns true if the geometries are within the specified distance of one another.
+  \\"\\"\\"
+  dwithin: GeoJSON
+
   \\"\\"\\"They represent the same geometry. Directionality is ignored.\\"\\"\\"
   equals: GeoJSON
 
@@ -2390,6 +2545,11 @@ input GeometryPointMFilter {
 
   \\"\\"\\"They do not share any space together.\\"\\"\\"
   disjoint: GeoJSON
+
+  \\"\\"\\"
+  Returns true if the geometries are within the specified distance of one another.
+  \\"\\"\\"
+  dwithin: GeoJSON
 
   \\"\\"\\"They represent the same geometry. Directionality is ignored.\\"\\"\\"
   equals: GeoJSON
@@ -2518,6 +2678,11 @@ input GeometryPolygonFilter {
   \\"\\"\\"They do not share any space together.\\"\\"\\"
   disjoint: GeoJSON
 
+  \\"\\"\\"
+  Returns true if the geometries are within the specified distance of one another.
+  \\"\\"\\"
+  dwithin: GeoJSON
+
   \\"\\"\\"They represent the same geometry. Directionality is ignored.\\"\\"\\"
   equals: GeoJSON
 
@@ -2630,6 +2795,11 @@ input GeometryPolygonMFilter {
 
   \\"\\"\\"They do not share any space together.\\"\\"\\"
   disjoint: GeoJSON
+
+  \\"\\"\\"
+  Returns true if the geometries are within the specified distance of one another.
+  \\"\\"\\"
+  dwithin: GeoJSON
 
   \\"\\"\\"They represent the same geometry. Directionality is ignored.\\"\\"\\"
   equals: GeoJSON

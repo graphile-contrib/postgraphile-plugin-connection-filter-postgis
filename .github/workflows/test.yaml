@@ -1,0 +1,19 @@
+name: CI
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ireznik/postgis-action@master
+        with:
+          postgresql version: "12-master"
+          postgresql password: "123"
+          postgresql user: "postgres"
+          postgresql db: "test"
+      - uses: actions/checkout@v2
+      - name: Install modules
+        run: yarn
+      - name: Run tests
+        run: yarn test
+        env:
+          TEST_DATABASE_URL: "postgres://postgres:123@localhost:5432/test"
